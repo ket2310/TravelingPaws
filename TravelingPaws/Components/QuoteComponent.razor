@@ -16,67 +16,67 @@
         </h1>
         <table style="width: 100%; padding: 15,15,15,15;">
             <tr>
-           @*     <td style="width: 50%; vertical-align:top">
-                    <p>
-                        <strong> EXEC PET TRANSPORTATION</strong> is a nonstop private luxury
-                        transport service dedicated to providing the best pet travel
-                        experience for your beloved pet and peace of mind for you
-                    </p>
-                    <p>
-                        <strong>Fastest option. NONSTOP PRIVATE :</strong> It means
-                        no other animals are in our cars while we move your pet
-                        family nonstop across the United States. This express
-                        service means we will reach our destination within hours,
-                        not days. Your pet will ride in our climate controlled
-                        luxury SUV or minivan with two skilled drivers that will
-                        never leave their side. Each transport is equipped with cell
-                        phones . Open air crates are provided (unless otherwise
-                        specified) for your pets safety during travel. This is a
-                        straight drive through service with no stops except for
-                        convenience/fuel breaks every four hours for your pet.
-                        Bottled water, approved treats, and clean bedding is
-                        provided to ensure your pet's comfort and well-being. It is
-                        our goal to provide the best possible care, comfort and as
-                        little stress as possible for your pet until you are both
-                        reunited. The driving team will send you updates via text
-                        messaging and pictures as they travel to keep you updated as
-                        to the progress of the trip so you can plan your day.
-                        Private pet travel also ensures that your pet is at no risk
-                        of contracting transmittable illnesses, kennel cough, H3N8,
-                        etc.
-                    </p>
+                @*     <td style="width: 50%; vertical-align:top">
+                <p>
+                <strong> EXEC PET TRANSPORTATION</strong> is a nonstop private luxury
+                transport service dedicated to providing the best pet travel
+                experience for your beloved pet and peace of mind for you
+                </p>
+                <p>
+                <strong>Fastest option. NONSTOP PRIVATE :</strong> It means
+                no other animals are in our cars while we move your pet
+                family nonstop across the United States. This express
+                service means we will reach our destination within hours,
+                not days. Your pet will ride in our climate controlled
+                luxury SUV or minivan with two skilled drivers that will
+                never leave their side. Each transport is equipped with cell
+                phones . Open air crates are provided (unless otherwise
+                specified) for your pets safety during travel. This is a
+                straight drive through service with no stops except for
+                convenience/fuel breaks every four hours for your pet.
+                Bottled water, approved treats, and clean bedding is
+                provided to ensure your pet's comfort and well-being. It is
+                our goal to provide the best possible care, comfort and as
+                little stress as possible for your pet until you are both
+                reunited. The driving team will send you updates via text
+                messaging and pictures as they travel to keep you updated as
+                to the progress of the trip so you can plan your day.
+                Private pet travel also ensures that your pet is at no risk
+                of contracting transmittable illnesses, kennel cough, H3N8,
+                etc.
+                </p>
 
-                    <p>
-                        <strong>ONE-STOP Option SELECT SEMI-PRIVATE:</strong> Direct
-                        drive through, 2-man driving team, sharing with one other
-                        clients’ pet. This option could add some time to the trip
-                        however we keep it streamlined. Pictures and updates at
-                        every fuel stop.
-                    </p>
-                    <p>
-                        <strong>ECONOMY- Transport:</strong> 1 man team, will stop
-                        daily, could take a few days to reach the destination. Vet
-                        certificates will be required within 10 days of pickup.
-                        Complete flexible pick up and drop off dates and times will
-                        be required by clients. These trips are discounted for this
-                        reason.
-                    </p>
-                    <p>
-                        <strong>FREE TRIP COORDINATOR:</strong> 13 years experience
-                        in the pet travel business and 40 years experience with
-                        animals, Sunny will help coordinate your pet move, make
-                        suggestions regarding booking flights, mover, kennels etc.
-                        We all work together for the comfort and success of your
-                        pets trip.
-                    </p>
-                    <p>
-                        For a <strong>FREE QUOTE</strong> fill out and submit the
-                        form below to describe your project or specific needs. You
-                        will receive a confirmation after submitting the form. Feel
-                        Free to call our office direct to speak with a pet
-                        transportation specialists. 678-975-2518 or e-mail us direct
-                        at info@execpettransportation.com.
-                    </p>
+                <p>
+                <strong>ONE-STOP Option SELECT SEMI-PRIVATE:</strong> Direct
+                drive through, 2-man driving team, sharing with one other
+                clients’ pet. This option could add some time to the trip
+                however we keep it streamlined. Pictures and updates at
+                every fuel stop.
+                </p>
+                <p>
+                <strong>ECONOMY- Transport:</strong> 1 man team, will stop
+                daily, could take a few days to reach the destination. Vet
+                certificates will be required within 10 days of pickup.
+                Complete flexible pick up and drop off dates and times will
+                be required by clients. These trips are discounted for this
+                reason.
+                </p>
+                <p>
+                <strong>FREE TRIP COORDINATOR:</strong> 13 years experience
+                in the pet travel business and 40 years experience with
+                animals, Sunny will help coordinate your pet move, make
+                suggestions regarding booking flights, mover, kennels etc.
+                We all work together for the comfort and success of your
+                pets trip.
+                </p>
+                <p>
+                For a <strong>FREE QUOTE</strong> fill out and submit the
+                form below to describe your project or specific needs. You
+                will receive a confirmation after submitting the form. Feel
+                Free to call our office direct to speak with a pet
+                transportation specialists. 678-975-2518 or e-mail us direct
+                at info@execpettransportation.com.
+                </p>
                 </td>*@
 
                 <td>
@@ -131,7 +131,7 @@
 
                             <label> Number of Cats:</label>&nbsp;
                             <InputNumber id="numberofcats" class="form-control" placeholder="Number of Cats"
-                                     @bind-Value="@quoteMap.petOwner.cat.Quantity" />
+                                         @bind-Value="@quoteMap.petOwner.cat.Quantity" />
                             <ValidationMessage For="@(() => quoteMap.petOwner.cat.Quantity)" />
                             <br />
                             <label> Breed:</label>&nbsp;
@@ -141,18 +141,18 @@
                             <br />
                             <label> Age:</label>&nbsp;
                             <InputNumber id="age" class="form-control" placeholder="Age"
-                                     @bind-Value="quoteMap.petOwner.cat.Age" />
+                                         @bind-Value="quoteMap.petOwner.cat.Age" />
                             <ValidationMessage For="@(() => quoteMap.petOwner.cat.Age)" />
                             <br />
                             <label> Weight:</label>&nbsp;
                             <InputNumber id="weight" class="form-control" placeholder="Weight"
-                                     @bind-Value="quoteMap.petOwner.cat.Weight" />
+                                         @bind-Value="quoteMap.petOwner.cat.Weight" />
                             <ValidationMessage For="@(() => quoteMap.petOwner.cat.Weight)" />
                             <br />
                             <br />
                             <label> Number of Dogs:</label>&nbsp;
                             <InputNumber id="numberofdogs" class="form-control" placeholder="Number of Dogs"
-                                     @bind-Value="@quoteMap.petOwner.dog.Quantity" />
+                                         @bind-Value="@quoteMap.petOwner.dog.Quantity" />
                             <ValidationMessage For="@(() => quoteMap.petOwner.dog.Quantity)" />
                             <br />
                             <label> Breed:</label>&nbsp;
@@ -162,19 +162,19 @@
                             <br />
                             <label> Age:</label>&nbsp;
                             <InputNumber id="age" class="form-control" placeholder="Age"
-                                     @bind-Value="quoteMap.petOwner.dog.Age" />
+                                         @bind-Value="quoteMap.petOwner.dog.Age" />
                             <ValidationMessage For="@(() => quoteMap.petOwner.dog.Age)" />
                             <br />
                             <label> Weight:</label>&nbsp;
                             <InputNumber id="weight" class="form-control" placeholder="Weight"
-                                     @bind-Value="quoteMap.petOwner.dog.Weight" />
+                                         @bind-Value="quoteMap.petOwner.dog.Weight" />
                             <ValidationMessage For="@(() => quoteMap.petOwner.dog.Weight)" />
                             <label>
                                 Any special instructions/medical information we need to
                                 know about your pet(s)?
                             </label>
                             <br />
-                            <textarea @bind="quoteMap.petOwner.Instructions" placeholder="Instructions"/>
+                            <textarea @bind="quoteMap.petOwner.Instructions" placeholder="Instructions" />
                             <br />
                             <h3><strong>Travel Information</strong></h3>
                             <label>Type of Travel</label><br />
@@ -191,18 +191,22 @@
                             </div>
                             <br />
                             <label>Date of Travel</label><br />
-                            <input type="text" placeholder="Travel Date" /><br />
+                            <InputDate id="LeaveOn" class="form-control" placeholder="Leave On"
+                                       @bind-Value="quoteMap.trip.traveldate" />
+
                             <label>Date of Return</label><br />
-                            <input type="text" placeholder="Return Date" /><br />
+                            <InputDate id="ReturnOn" class="form-control" placeholder="Return On"
+                                       @bind-Value="quoteMap.trip.returndate" />
                             <br />
                             <br />
                             <h3><strong>Pickup Address</strong></h3>
 
                             <label>Address Line 1</label><br />
-                            <input type="text" /><br />
+                            <InputText id="pAddress1" class="form-control" placeholder="Address 1"
+                                       @bind-Value="quoteMap.trip.pickupaddress" />
                             <label>Address Line 2</label><br />
-                            <input type="text" /><br />
-
+                            <InputText id="pAddress2" class="form-control" placeholder="Address 2"
+                                       @bind-Value="quoteMap.trip.pickupaddress2" />
                             <table>
                                 <tr>
                                     <td><label>City</label></td>
@@ -211,21 +215,28 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="text" />
+                                        <InputText id="pickupCity" class="form-control" placeholder="Pickup City"
+                                                   @bind-Value="quoteMap.trip.pickupcity" />
                                     </td>
                                     <td>
-                                        <input type="text" />
+                                        <InputText id="pickupState" class="form-control" placeholder="Pickup State"
+                                                   @bind-Value="quoteMap.trip.pickupstate" />
                                     </td>
-                                    <td><input type="text" /></td>
+                                    <td>
+                                        <InputText id="pickupZip" class="form-control" placeholder="Pickup Zip"
+                                                   @bind-Value="quoteMap.trip.pickupzip" />
+                                    </td>
                                 </tr>
                             </table>
                             <br />
                             <br />
                             <h3><strong>Destination Address</strong></h3>
                             <label>Address Line 1</label><br />
-                            <input type="text" /><br />
+                            <InputText id="dAddress1" class="form-control" placeholder="Address 1"
+                                       @bind-Value="quoteMap.trip.destinationaddress" />
                             <label>Address Line 2</label><br />
-                            <input type="text" /><br />
+                            <InputText id="dAddress2" class="form-control" placeholder="Address 2"
+                                       @bind-Value="quoteMap.trip.destinationaddress2" />
                             <table>
                                 <tr>
                                     <td><label>City</label></td>
@@ -234,12 +245,17 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="text" />
+                                        <InputText id="destinationCity" class="form-control" placeholder="Pickup City"
+                                                   @bind-Value="quoteMap.trip.destinationcity" />
                                     </td>
                                     <td>
-                                        <input type="text" />
+                                        <InputText id="destinationState" class="form-control" placeholder="Pickup State"
+                                                   @bind-Value="quoteMap.trip.destinationstate" />
                                     </td>
-                                    <td><input type="text" /></td>
+                                    <td>
+                                        <InputText id="destinationZip" class="form-control" placeholder="Pickup Zip"
+                                                   @bind-Value="quoteMap.trip.destinationzip" />
+                                    </td>
                                 </tr>
                             </table>
                             <br />

@@ -41,8 +41,8 @@ namespace TravelingPaws.Components
                         dog = new Dog(),
                         cat = new Cat()
                     },
-                    TravelType = TravelTypes.TwoWay
-                   
+                    TravelType = TravelTypes.TwoWay,
+                    trip = new Trip()
                 };
             }
 
