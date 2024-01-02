@@ -1,5 +1,4 @@
-﻿using ExecPetTransportBlazorAPI517.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TravelingPawsAPI.Models
 {

@@ -3,8 +3,9 @@ using TravelingPawsAPI.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TravelingPaws.DataContexts;
+
 using TravelingPawsAPI.Maps;
+using TravelingPawsAPI.DataContext;
 
 namespace TravelingPawsAPI.Repositories
 {
@@ -55,6 +56,19 @@ namespace TravelingPawsAPI.Repositories
 
                     var trip = await _context.Trips.FirstOrDefaultAsync(t => t.TripId == quote.tripId);
 
+                    quote.trip.TravelTypeId = trip.TravelTypeId;
+                    quote.trip.traveldate = trip.traveldate;
+                    quote.trip.returndate = trip.returndate;
+                    quote.trip.pickupaddress = trip.pickupaddress;
+                    quote.trip.pickupaddress2 = trip.pickupaddress2;
+                    quote.trip.pickupcity = trip.pickupcity;
+                    quote.trip.pickupzip = trip.pickupzip;
+                    quote.trip.destinationaddress = trip.destinationaddress;
+                    quote.trip.destinationaddress2 = trip.destinationaddress2;
+                    quote.trip.destinationcity = trip.destinationcity;
+                    quote.trip.destinationzip = trip.destinationzip;
+                    quote.trip.otherinfo = trip.otherinfo;
+
                     return quotes;
                 }
             }
@@ -84,7 +98,20 @@ namespace TravelingPawsAPI.Repositories
             q.petOwner.dog.Quantity =   obj.petOwner.dog.Quantity;
             q.petOwner.dog.Age  = obj.petOwner.dog.Age;
             q.petOwner.dog.Weight = obj.petOwner.dog.Weight;
-            q.TravelType = obj.TravelType;
+
+            q.trip.TravelTypeId = obj.trip.TravelTypeId;
+            q.trip.traveldate = obj.trip.traveldate;
+            q.trip.returndate = obj.trip.returndate;
+            q.trip.pickupaddress = obj.trip.pickupaddress;
+            q.trip.pickupaddress2 = obj.trip.pickupaddress2;
+            q.trip.pickupcity = obj.trip.pickupcity;
+            q.trip.pickupzip = obj.trip.pickupzip;
+            q.trip.destinationaddress = obj.trip.destinationaddress;
+            q.trip.destinationaddress2 = obj.trip.destinationaddress2;
+            q.trip.destinationcity = obj.trip.destinationcity;
+            q.trip.destinationzip = obj.trip.destinationzip;
+            q.trip.otherinfo = obj.trip.otherinfo;
+
 
             await _context.Quotes.AddAsync(q);
             await _context.SaveChangesAsync();
@@ -124,6 +151,23 @@ namespace TravelingPawsAPI.Repositories
                         result.petOwner.dog.Quantity = updQuote.petOwner.dog.Quantity;
                         result.petOwner.dog.Breed = updQuote.petOwner.dog.Breed;
                         result.petOwner.dog.Weight = updQuote.petOwner.dog.Weight;
+                    }
+
+                    if (await _context.Trips.FirstOrDefaultAsync(t => t.TripId == result.tripId) != null)
+                    {
+
+                        result.trip.TravelTypeId = updQuote.trip.TravelTypeId;
+                        result.trip.traveldate = updQuote.trip.traveldate;
+                        result.trip.returndate = updQuote.trip.returndate;
+                        result.trip.pickupaddress = updQuote.trip.pickupaddress;
+                        result.trip.pickupaddress2 = updQuote.trip.pickupaddress2;
+                        result.trip.pickupcity = updQuote.trip.pickupcity;
+                        result.trip.pickupzip = updQuote.trip.pickupzip;
+                        result.trip.destinationaddress = updQuote.trip.destinationaddress;
+                        result.trip.destinationaddress2 = updQuote.trip.destinationaddress2;
+                        result.trip.destinationcity = updQuote.trip.destinationcity;
+                        result.trip.destinationzip = updQuote.trip.destinationzip;
+                        result.trip.otherinfo = updQuote.trip.otherinfo;
                     }
                     await _context.SaveChangesAsync();
                     return result;

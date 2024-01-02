@@ -3,9 +3,8 @@ using TravelingPawsAPI.Models;
 using System.Reflection;
 using System;
 using TravelingPawsAPI.Enums;
-using ExecPetTransportBlazorAPI517.Models;
 
-namespace TravelingPaws.DataContexts
+namespace TravelingPawsAPI.DataContext
 {
     public class QuoteContext : DbContext
     {

@@ -1,0 +1,258 @@
+﻿@page "/components/quotecomponent"
+@using TravelingPaws.Pages;
+@using TravelingPawsAPI.Models;
+@using TravelingPawsAPI.Enums;
+@inherits QuoteComponentBase
+
+
+<div>
+    <div>
+        <h1>
+            <center>
+
+                <strong>Request a FREE QUOTE - FILL OUT FORM BELOW</strong>
+            </center>
+            <br />
+        </h1>
+        <table style="width: 100%; padding: 15,15,15,15;">
+            <tr>
+           @*     <td style="width: 50%; vertical-align:top">
+                    <p>
+                        <strong> EXEC PET TRANSPORTATION</strong> is a nonstop private luxury
+                        transport service dedicated to providing the best pet travel
+                        experience for your beloved pet and peace of mind for you
+                    </p>
+                    <p>
+                        <strong>Fastest option. NONSTOP PRIVATE :</strong> It means
+                        no other animals are in our cars while we move your pet
+                        family nonstop across the United States. This express
+                        service means we will reach our destination within hours,
+                        not days. Your pet will ride in our climate controlled
+                        luxury SUV or minivan with two skilled drivers that will
+                        never leave their side. Each transport is equipped with cell
+                        phones . Open air crates are provided (unless otherwise
+                        specified) for your pets safety during travel. This is a
+                        straight drive through service with no stops except for
+                        convenience/fuel breaks every four hours for your pet.
+                        Bottled water, approved treats, and clean bedding is
+                        provided to ensure your pet's comfort and well-being. It is
+                        our goal to provide the best possible care, comfort and as
+                        little stress as possible for your pet until you are both
+                        reunited. The driving team will send you updates via text
+                        messaging and pictures as they travel to keep you updated as
+                        to the progress of the trip so you can plan your day.
+                        Private pet travel also ensures that your pet is at no risk
+                        of contracting transmittable illnesses, kennel cough, H3N8,
+                        etc.
+                    </p>
+
+                    <p>
+                        <strong>ONE-STOP Option SELECT SEMI-PRIVATE:</strong> Direct
+                        drive through, 2-man driving team, sharing with one other
+                        clients’ pet. This option could add some time to the trip
+                        however we keep it streamlined. Pictures and updates at
+                        every fuel stop.
+                    </p>
+                    <p>
+                        <strong>ECONOMY- Transport:</strong> 1 man team, will stop
+                        daily, could take a few days to reach the destination. Vet
+                        certificates will be required within 10 days of pickup.
+                        Complete flexible pick up and drop off dates and times will
+                        be required by clients. These trips are discounted for this
+                        reason.
+                    </p>
+                    <p>
+                        <strong>FREE TRIP COORDINATOR:</strong> 13 years experience
+                        in the pet travel business and 40 years experience with
+                        animals, Sunny will help coordinate your pet move, make
+                        suggestions regarding booking flights, mover, kennels etc.
+                        We all work together for the comfort and success of your
+                        pets trip.
+                    </p>
+                    <p>
+                        For a <strong>FREE QUOTE</strong> fill out and submit the
+                        form below to describe your project or specific needs. You
+                        will receive a confirmation after submitting the form. Feel
+                        Free to call our office direct to speak with a pet
+                        transportation specialists. 678-975-2518 or e-mail us direct
+                        at info@execpettransportation.com.
+                    </p>
+                </td>*@
+
+                <td>
+                    <p>
+                        <strong>
+                            Please fill out all fields in order to provide an accurate
+                            quote
+                        </strong>
+                    </p>
+                    <br />
+                    <p>
+                        <strong>Request A Quote</strong>
+                    </p>
+                    <hr />
+                    <h3>Your Contact Information</h3>
+                    <EditForm Model="@quoteMap" OnValidSubmit="HandleValidSubmit">
+                        <div>
+                            <label> Your First Name:</label>&nbsp;
+                            <InputText id="firstName" @bind-Value="quoteMap.petOwner.FirstName" class="form-control" placeholder="First Name">
+                            </InputText>
+                            <ValidationMessage For="@(() => quoteMap.petOwner.FirstName)" />
+
+                            <label> Your Last Name:</label>&nbsp;
+                            <InputText id="lastName" class="form-control" placeholder="Last Name"
+                                       @bind-Value="quoteMap.petOwner.LastName" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.LastName)" />
+
+                            <br />
+                            <label>E-mail:</label>&nbsp;
+                            <InputText id="email" class="form-control" placeholder="Email"
+                                       @bind-Value="quoteMap.petOwner.Email" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.Email)" />
+
+
+                            <br />
+                            <label> Phone Number:</label>&nbsp;
+                            <InputText id="phonenumber" class="form-control" placeholder="Phone Number"
+                                       @bind-Value="quoteMap.petOwner.PhoneNumber" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.PhoneNumber)" />
+                            <br />
+                            <label>Cell Phone:</label>&nbsp;
+                            <InputText id="cellphonw" class="form-control" placeholder="Cell Phone"
+                                       @bind-Value="quoteMap.petOwner.CellNumber" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.CellNumber  )" />
+                            <br />
+
+                            <h3>
+                                <strong>Pet Information</strong>
+                            </h3>
+
+                            <p>Please fill out all applicable fields</p>
+
+                            <label> Number of Cats:</label>&nbsp;
+                            <InputNumber id="numberofcats" class="form-control" placeholder="Number of Cats"
+                                     @bind-Value="@quoteMap.petOwner.cat.Quantity" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.cat.Quantity)" />
+                            <br />
+                            <label> Breed:</label>&nbsp;
+                            <InputText id="breed" class="form-control" placeholder="Breed"
+                                       @bind-Value="quoteMap.petOwner.cat.Breed" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.cat.Breed)" />
+                            <br />
+                            <label> Age:</label>&nbsp;
+                            <InputNumber id="age" class="form-control" placeholder="Age"
+                                     @bind-Value="quoteMap.petOwner.cat.Age" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.cat.Age)" />
+                            <br />
+                            <label> Weight:</label>&nbsp;
+                            <InputNumber id="weight" class="form-control" placeholder="Weight"
+                                     @bind-Value="quoteMap.petOwner.cat.Weight" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.cat.Weight)" />
+                            <br />
+                            <br />
+                            <label> Number of Dogs:</label>&nbsp;
+                            <InputNumber id="numberofdogs" class="form-control" placeholder="Number of Dogs"
+                                     @bind-Value="@quoteMap.petOwner.dog.Quantity" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.dog.Quantity)" />
+                            <br />
+                            <label> Breed:</label>&nbsp;
+                            <InputText id="breed" class="form-control" placeholder="Breed"
+                                       @bind-Value="quoteMap.petOwner.dog.Breed" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.dog.Breed)" />
+                            <br />
+                            <label> Age:</label>&nbsp;
+                            <InputNumber id="age" class="form-control" placeholder="Age"
+                                     @bind-Value="quoteMap.petOwner.dog.Age" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.dog.Age)" />
+                            <br />
+                            <label> Weight:</label>&nbsp;
+                            <InputNumber id="weight" class="form-control" placeholder="Weight"
+                                     @bind-Value="quoteMap.petOwner.dog.Weight" />
+                            <ValidationMessage For="@(() => quoteMap.petOwner.dog.Weight)" />
+                            <label>
+                                Any special instructions/medical information we need to
+                                know about your pet(s)?
+                            </label>
+                            <br />
+                            <textarea @bind="quoteMap.petOwner.Instructions" placeholder="Instructions"/>
+                            <br />
+                            <h3><strong>Travel Information</strong></h3>
+                            <label>Type of Travel</label><br />
+                            <label for="traveltype" class="col-sm-2 col-form-label">
+                                Travel Type:
+                            </label>
+                            <div class="col-sm-10">
+                                <InputSelect @bind-Value="quoteMap.TravelType" class="form-control">
+                                    @foreach (var item in Enum.GetValues(typeof(TravelTypes)))
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                                </InputSelect>
+                            </div>
+                            <br />
+                            <label>Date of Travel</label><br />
+                            <input type="text" placeholder="Travel Date" /><br />
+                            <label>Date of Return</label><br />
+                            <input type="text" placeholder="Return Date" /><br />
+                            <br />
+                            <br />
+                            <h3><strong>Pickup Address</strong></h3>
+
+                            <label>Address Line 1</label><br />
+                            <input type="text" /><br />
+                            <label>Address Line 2</label><br />
+                            <input type="text" /><br />
+
+                            <table>
+                                <tr>
+                                    <td><label>City</label></td>
+                                    <td><label>State</label></td>
+                                    <td><label>Zip</label></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td><input type="text" /></td>
+                                </tr>
+                            </table>
+                            <br />
+                            <br />
+                            <h3><strong>Destination Address</strong></h3>
+                            <label>Address Line 1</label><br />
+                            <input type="text" /><br />
+                            <label>Address Line 2</label><br />
+                            <input type="text" /><br />
+                            <table>
+                                <tr>
+                                    <td><label>City</label></td>
+                                    <td><label>State</label></td>
+                                    <td><label>Zip</label></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td><input type="text" /></td>
+                                </tr>
+                            </table>
+                            <br />
+
+                            <button>Submit</button>
+                        </div>
+                    </EditForm>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+@code {
+
+}

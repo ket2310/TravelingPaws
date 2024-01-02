@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TravelingPaws.DataContexts;
+using TravelingPawsAPI.DataContext;
 using TravelingPawsAPI.Maps;
 using TravelingPawsAPI.Models;
 using TravelingPawsAPI.Repositories;
@@ -33,7 +33,7 @@ namespace TravelingPawsAPI.Controllers
 
         // GET: api/Quotes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Quote>> GetQuote(int id)
+        public  Task<ActionResult<Quote>> GetQuote(int id)
         {
            
             return null;

@@ -1,8 +1,7 @@
-﻿using ExecPetTransportBlazorAPI517.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using TravelingPawsAPI.Models;
 
-namespace TravelingPaws.DataContexts
+namespace TravelingPawsAPI.DataContext
 {
     public class QuoteInMemoryContext : DbContext
     {

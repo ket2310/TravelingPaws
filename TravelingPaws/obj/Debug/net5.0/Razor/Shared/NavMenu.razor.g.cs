@@ -131,9 +131,9 @@ using TravelingPaws.Shared;
             __builder.AddAttribute(18, "class", "nav-item px-3");
             __builder.AddAttribute(19, "b-agv72df0ec");
             __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Routing.NavLink>(20);
-            __builder.AddAttribute(21, "class", (object)("nav-link"));
-            __builder.AddAttribute(22, "href", (object)(""));
-            __builder.AddAttribute(23, "Match", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.Routing.NavLinkMatch>(
+            __builder.AddAttribute(21, "class", "nav-link");
+            __builder.AddAttribute(22, "href", "");
+            __builder.AddAttribute(23, "Match", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.Routing.NavLinkMatch>(
 #nullable restore
 #line 11 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Shared\NavMenu.razor"
                                                      NavLinkMatch.All
@@ -141,7 +141,7 @@ using TravelingPaws.Shared;
 #line default
 #line hidden
 #nullable disable
-            )));
+            ));
             __builder.AddAttribute(24, "ChildContent", (global::Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.AddMarkupContent(25, "<span class=\"oi oi-home\" aria-hidden=\"true\" b-agv72df0ec></span> Home\r\n            ");
             }
@@ -153,8 +153,8 @@ using TravelingPaws.Shared;
             __builder.AddAttribute(28, "class", "nav-item px-3");
             __builder.AddAttribute(29, "b-agv72df0ec");
             __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Routing.NavLink>(30);
-            __builder.AddAttribute(31, "class", (object)("nav-link"));
-            __builder.AddAttribute(32, "href", (object)("counter"));
+            __builder.AddAttribute(31, "class", "nav-link");
+            __builder.AddAttribute(32, "href", "counter");
             __builder.AddAttribute(33, "ChildContent", (global::Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.AddMarkupContent(34, "<span class=\"oi oi-plus\" aria-hidden=\"true\" b-agv72df0ec></span> Counter\r\n            ");
             }
@@ -166,8 +166,8 @@ using TravelingPaws.Shared;
             __builder.AddAttribute(37, "class", "nav-item px-3");
             __builder.AddAttribute(38, "b-agv72df0ec");
             __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Routing.NavLink>(39);
-            __builder.AddAttribute(40, "class", (object)("nav-link"));
-            __builder.AddAttribute(41, "href", (object)("fetchdata"));
+            __builder.AddAttribute(40, "class", "nav-link");
+            __builder.AddAttribute(41, "href", "fetchdata");
             __builder.AddAttribute(42, "ChildContent", (global::Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.AddMarkupContent(43, "<span class=\"oi oi-list-rich\" aria-hidden=\"true\" b-agv72df0ec></span> Fetch data\r\n            ");
             }

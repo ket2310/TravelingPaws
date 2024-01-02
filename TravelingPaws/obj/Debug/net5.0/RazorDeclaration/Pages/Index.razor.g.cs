@@ -83,7 +83,7 @@ using TravelingPaws.Shared;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : global::Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Index : IndexBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)

@@ -11,7 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TravelingPaws.DataContexts;
+using TravelingPawsAPI.DataContext;
 using TravelingPawsAPI.Repositories;
 
 namespace TravelingPawsAPI

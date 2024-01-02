@@ -1,6 +1,5 @@
 ﻿using TravelingPawsAPI.Enums;
 using System.ComponentModel.DataAnnotations;
-using ExecPetTransportBlazorAPI517.Models;
 
 namespace TravelingPawsAPI.Models
 {

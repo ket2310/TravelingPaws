@@ -1,7 +1,46 @@
 ﻿@page "/"
+@inherits IndexBase
 
-<h1>Hello, world!</h1>
+<h1>Quotes List</h1>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@if (Quotes == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Cell Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var q in Quotes)
+            {
+                <tr>
+                    <td>@(q.petOwner.FirstName + " " +@q.petOwner.LastName)</td>
+                    <td>@q.petOwner.Email</td>
+                    <td>@q.petOwner.PhoneNumber</td>
+                    <td>@q.petOwner.CellNumber</td>
+                    <td>
+                        <a href="#" class="btn btn-primary m-1">View</a>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary m-1">Edit</a>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-danger m-1">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr />
+
+    <a href="components/quotecomponent" class="btn btn-primary m-1">Create a Quote</a>
+}
