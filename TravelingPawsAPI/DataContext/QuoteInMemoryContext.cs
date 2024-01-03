@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TravelingPawsAPI.Enums;
 using TravelingPawsAPI.Models;
 
 namespace TravelingPawsAPI.DataContext

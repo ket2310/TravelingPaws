@@ -65,25 +65,39 @@ namespace TravelingPawsAPI.Repositories
         {
             Quote q = new Quote();
             q.petOwner = new PetOwner();
+            q.petOwner.PetOwnerId = 1;
             q.petOwner.FirstName = obj.petOwner.FirstName;
             q.petOwner.LastName = obj.petOwner.LastName;
             q.petOwner.Email = obj.petOwner.Email;
             q.petOwner.PhoneNumber = obj.petOwner.PhoneNumber;
             q.petOwner.CellNumber = obj.petOwner.CellNumber;
             q.petOwner.Instructions = obj.petOwner.Instructions;
-            q.TravelType = obj.TravelType;
-
             q.petOwner.cat = new Cat();
-            q.petOwner.cat.Quantity = obj.petOwner.cat.Quantity;
-            q.petOwner.cat.Weight = obj.petOwner.cat.Weight;
             q.petOwner.cat.Breed = obj.petOwner.cat.Breed;
+            q.petOwner.cat.Quantity = obj.petOwner.cat.Quantity;
             q.petOwner.cat.Age = obj.petOwner.cat.Age;
+            q.petOwner.cat.Weight = obj.petOwner.cat.Weight;
 
             q.petOwner.dog = new Dog();
-            q.petOwner.dog.Quantity = obj.petOwner.dog.Quantity;
-            q.petOwner.dog.Weight = obj.petOwner.dog.Weight;
             q.petOwner.dog.Breed = obj.petOwner.dog.Breed;
+            q.petOwner.dog.Quantity = obj.petOwner.dog.Quantity;
             q.petOwner.dog.Age = obj.petOwner.dog.Age;
+            q.petOwner.dog.Weight = obj.petOwner.dog.Weight;
+
+            q.trip = new Trip();
+            q.trip.TravelType = obj.trip.TravelType;
+            q.trip.traveldate = obj.trip.traveldate;
+            q.trip.returndate = obj.trip.returndate;
+            q.trip.pickupaddress = obj.trip.pickupaddress;
+            q.trip.pickupaddress2 = obj.trip.pickupaddress2;
+            q.trip.pickupcity = obj.trip.pickupcity;
+            q.trip.pickupzip = obj.trip.pickupzip;
+            q.trip.destinationaddress = obj.trip.destinationaddress;
+            q.trip.destinationaddress2 = obj.trip.destinationaddress2;
+            q.trip.destinationcity = obj.trip.destinationcity;
+            q.trip.destinationzip = obj.trip.destinationzip;
+            q.trip.otherinfo = obj.trip.otherinfo;
+
 
             await _context.Quotes.AddAsync(q);
             await _context.SaveChangesAsync();

@@ -8,10 +8,9 @@ using TravelingPawsAPI.Models;
 
 namespace TravelingPaws.Components
 {
-    public class QuoteComponentBase : ComponentBase
+    public class QuoteComponentBase : GlobaldataService
     {
-        [Inject]
-        public IQuoteService QuoteService { get; set; }
+     
         public Quote Quote { get; set; } = new Quote { petOwner = new PetOwner() };
         public QuoteMap quoteMap { get; set; } = new QuoteMap { petOwner = new PetOwner() };
 
@@ -30,7 +29,8 @@ namespace TravelingPaws.Components
 
             if (QuoteId != 0)
             {
-                Quote = await QuoteService.GetQuote(int.Parse(Id));
+                //Quote = await QuoteService.GetQuote(int.Parse(Id));
+                Quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
             }
             else
             {
@@ -41,9 +41,22 @@ namespace TravelingPaws.Components
                         dog = new Dog(),
                         cat = new Cat()
                     },
+                    
                     TravelType = TravelTypes.TwoWay,
                     trip = new Trip()
                 };
+                Quote.petOwner.FirstName = "Kirk";
+                Quote.petOwner.LastName = "Thomas";
+                Quote.petOwner.Email = "dablumaroo@gmail.com";
+                Quote.petOwner.PhoneNumber = "979-676-0076";
+                Quote.petOwner.CellNumber = "979-676-0076";
+                Quote.petOwner.Instructions = "My dog is afraid of storms";
+                Quote.petOwner.dog.Quantity = 1;
+                Quote.petOwner.dog.Age = 10;
+                Quote.petOwner.dog.Weight = 60;
+                Quote.petOwner.dog.Breed = "Labrador";
+                Quote.trip.traveldate = System.DateTime.Now;
+                Quote.trip.returndate = System.DateTime.Now.AddDays(7);
             }
 
             Mapper.Map(Quote, quoteMap);
@@ -57,11 +70,13 @@ namespace TravelingPaws.Components
 
             if (Quote.QuoteId != 0)
             {
-                result = await QuoteService.UpdateQuote(Quote);
+                //result = await QuoteService.UpdateQuote(Quote);
+                result = await InMemoryQuoteService.UpdateQuote(Quote);
             }
             else
             {
-                result = await QuoteService.CreateQuote(Quote);
+             //   result = await QuoteService.CreateQuote(Quote);
+                  result = await InMemoryQuoteService.CreateQuote(Quote);
             }
             if (result != null)
             {

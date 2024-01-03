@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dablu\\source\\repos\\TravelingPaws\\TravelingPawsAPI\\TravelingPawsAPI.csproj": {}
+    "C:\\Users\\kirthomas\\source\\repos\\ket2310\\TravelingPaws\\TravelingPawsAPI\\TravelingPawsAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dablu\\source\\repos\\TravelingPaws\\TravelingPawsAPI\\TravelingPawsAPI.csproj": {
+    "C:\\Users\\kirthomas\\source\\repos\\ket2310\\TravelingPaws\\TravelingPawsAPI\\TravelingPawsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dablu\\source\\repos\\TravelingPaws\\TravelingPawsAPI\\TravelingPawsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\kirthomas\\source\\repos\\ket2310\\TravelingPaws\\TravelingPawsAPI\\TravelingPawsAPI.csproj",
         "projectName": "TravelingPawsAPI",
-        "projectPath": "C:\\Users\\dablu\\source\\repos\\TravelingPaws\\TravelingPawsAPI\\TravelingPawsAPI.csproj",
-        "packagesPath": "C:\\Users\\dablu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dablu\\source\\repos\\TravelingPaws\\TravelingPawsAPI\\obj\\",
+        "projectPath": "C:\\Users\\kirthomas\\source\\repos\\ket2310\\TravelingPaws\\TravelingPawsAPI\\TravelingPawsAPI.csproj",
+        "packagesPath": "C:\\Users\\kirthomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kirthomas\\source\\repos\\ket2310\\TravelingPaws\\TravelingPawsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\dablu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\kirthomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,8 +25,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "net5.0": {
@@ -84,8 +83,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -97,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -38,8 +38,13 @@ namespace TravelingPaws
             {
                 client.BaseAddress = new Uri("https://localhost:44306/");
             });
-        }
 
+            services.AddHttpClient<IInMemoryQuoteService, InMemoryQuoteService>(client =>
+            {
+                client.BaseAddress = new Uri("https://localhost:44306/");
+            });
+        }
+    
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

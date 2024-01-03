@@ -56,7 +56,7 @@ namespace TravelingPawsAPI.Repositories
 
                     var trip = await _context.Trips.FirstOrDefaultAsync(t => t.TripId == quote.tripId);
 
-                    quote.trip.TravelTypeId = trip.TravelTypeId;
+                    quote.trip.TravelType = trip.TravelType;
                     quote.trip.traveldate = trip.traveldate;
                     quote.trip.returndate = trip.returndate;
                     quote.trip.pickupaddress = trip.pickupaddress;
@@ -99,7 +99,8 @@ namespace TravelingPawsAPI.Repositories
             q.petOwner.dog.Age  = obj.petOwner.dog.Age;
             q.petOwner.dog.Weight = obj.petOwner.dog.Weight;
 
-            q.trip.TravelTypeId = obj.trip.TravelTypeId;
+            q.trip = new Trip();
+            q.trip.TravelType = obj.trip.TravelType;
             q.trip.traveldate = obj.trip.traveldate;
             q.trip.returndate = obj.trip.returndate;
             q.trip.pickupaddress = obj.trip.pickupaddress;
@@ -156,7 +157,7 @@ namespace TravelingPawsAPI.Repositories
                     if (await _context.Trips.FirstOrDefaultAsync(t => t.TripId == result.tripId) != null)
                     {
 
-                        result.trip.TravelTypeId = updQuote.trip.TravelTypeId;
+                        result.trip.TravelType = updQuote.trip.TravelType;
                         result.trip.traveldate = updQuote.trip.traveldate;
                         result.trip.returndate = updQuote.trip.returndate;
                         result.trip.pickupaddress = updQuote.trip.pickupaddress;
