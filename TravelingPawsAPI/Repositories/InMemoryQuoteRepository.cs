@@ -46,7 +46,7 @@ namespace TravelingPawsAPI.Repositories
                     }
 
                     var dog = await _context.Dogs.FirstOrDefaultAsync(d => d.DogId == quote.petOwner.dogId);
-                    if (dog !=null)
+                    if (dog != null)
                     {
                         quote.petOwner.dog.Age = dog.Age;
                         quote.petOwner.dog.Quantity = dog.Quantity;
@@ -90,13 +90,13 @@ namespace TravelingPawsAPI.Repositories
             q.petOwner.cat = new Cat();
             q.petOwner.cat.Breed = obj.petOwner.cat.Breed;
             q.petOwner.cat.Quantity = obj.petOwner.cat.Quantity;
-            q.petOwner.cat.Age  =  obj.petOwner.cat.Age;
-            q.petOwner.cat.Weight  = obj.petOwner.cat.Weight;
+            q.petOwner.cat.Age = obj.petOwner.cat.Age;
+            q.petOwner.cat.Weight = obj.petOwner.cat.Weight;
 
             q.petOwner.dog = new Dog();
             q.petOwner.dog.Breed = obj.petOwner.dog.Breed;
-            q.petOwner.dog.Quantity =   obj.petOwner.dog.Quantity;
-            q.petOwner.dog.Age  = obj.petOwner.dog.Age;
+            q.petOwner.dog.Quantity = obj.petOwner.dog.Quantity;
+            q.petOwner.dog.Age = obj.petOwner.dog.Age;
             q.petOwner.dog.Weight = obj.petOwner.dog.Weight;
 
             q.trip = new Trip();
@@ -106,10 +106,13 @@ namespace TravelingPawsAPI.Repositories
             q.trip.pickupaddress = obj.trip.pickupaddress;
             q.trip.pickupaddress2 = obj.trip.pickupaddress2;
             q.trip.pickupcity = obj.trip.pickupcity;
+            q.trip.pickupstate = obj.trip.pickupstate;
             q.trip.pickupzip = obj.trip.pickupzip;
+
             q.trip.destinationaddress = obj.trip.destinationaddress;
             q.trip.destinationaddress2 = obj.trip.destinationaddress2;
             q.trip.destinationcity = obj.trip.destinationcity;
+            q.trip.destinationstate = obj.trip.destinationstate;
             q.trip.destinationzip = obj.trip.destinationzip;
             q.trip.otherinfo = obj.trip.otherinfo;
 
@@ -126,7 +129,7 @@ namespace TravelingPawsAPI.Repositories
 
             if (result != null)
             {
-                
+
                 if (await _context.PetOwners.FirstOrDefaultAsync(p => p.PetOwnerId ==
                  result.petOwnerId) != null)
                 {
@@ -137,8 +140,8 @@ namespace TravelingPawsAPI.Repositories
                     result.petOwner.CellNumber = updQuote.petOwner.CellNumber;
                     result.TravelType = updQuote.TravelType;
                     result.petOwner.Instructions = updQuote.petOwner.Instructions;
-            
-                    if(await _context.Cats.FirstOrDefaultAsync(c => c.CatId == result.petOwner.catId) != null)
+
+                    if (await _context.Cats.FirstOrDefaultAsync(c => c.CatId == result.petOwner.catId) != null)
                     {
                         result.petOwner.cat.Age = updQuote.petOwner.cat.Age;
                         result.petOwner.cat.Quantity = updQuote.petOwner.cat.Quantity;
@@ -163,10 +166,13 @@ namespace TravelingPawsAPI.Repositories
                         result.trip.pickupaddress = updQuote.trip.pickupaddress;
                         result.trip.pickupaddress2 = updQuote.trip.pickupaddress2;
                         result.trip.pickupcity = updQuote.trip.pickupcity;
+                        result.trip.pickupstate = updQuote.trip.pickupstate;
                         result.trip.pickupzip = updQuote.trip.pickupzip;
+
                         result.trip.destinationaddress = updQuote.trip.destinationaddress;
                         result.trip.destinationaddress2 = updQuote.trip.destinationaddress2;
                         result.trip.destinationcity = updQuote.trip.destinationcity;
+                        result.trip.destinationstate = updQuote.trip.destinationstate;
                         result.trip.destinationzip = updQuote.trip.destinationzip;
                         result.trip.otherinfo = updQuote.trip.otherinfo;
                     }
@@ -180,6 +186,18 @@ namespace TravelingPawsAPI.Repositories
         public bool DoesItLive(int id)
         {
             return _context.Quotes.Any(e => e.QuoteId == id);
+        }
+
+        public async Task<Quote> GetQuote(int id)
+        {
+            var quote = await _context.Quotes
+                .Include(p => p.petOwner)
+                .Include(c => c.petOwner.cat)
+                .Include(d => d.petOwner.dog)
+                .Include(t => t.trip)
+                .FirstOrDefaultAsync(e => e.QuoteId == id);
+
+            return quote;
         }
     }
 }

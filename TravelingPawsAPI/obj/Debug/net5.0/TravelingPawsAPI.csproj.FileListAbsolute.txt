@@ -273,3 +273,4 @@ C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\ref\TravelingPawsAPI.dll
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.pdb
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.genruntimeconfig.cache
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.csprojAssemblyReference.cache

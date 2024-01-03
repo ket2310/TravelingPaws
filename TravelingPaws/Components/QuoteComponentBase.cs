@@ -51,12 +51,32 @@ namespace TravelingPaws.Components
                 Quote.petOwner.PhoneNumber = "979-676-0076";
                 Quote.petOwner.CellNumber = "979-676-0076";
                 Quote.petOwner.Instructions = "My dog is afraid of storms";
+
+                Quote.petOwner.cat.Quantity = 1;
+                Quote.petOwner.cat.Age = 4;
+                Quote.petOwner.cat.Weight = 10;
+                Quote.petOwner.cat.Breed = "Calico";
+
                 Quote.petOwner.dog.Quantity = 1;
                 Quote.petOwner.dog.Age = 10;
                 Quote.petOwner.dog.Weight = 60;
                 Quote.petOwner.dog.Breed = "Labrador";
+                
                 Quote.trip.traveldate = System.DateTime.Now;
                 Quote.trip.returndate = System.DateTime.Now.AddDays(7);
+
+                Quote.trip.pickupaddress = "5303 Creek Lane";
+                Quote.trip.pickupaddress2 = "";
+                Quote.trip.pickupcity = "College Station";
+                Quote.trip.pickupstate = "Texas";
+                Quote.trip.pickupzip = "77845";
+
+                Quote.trip.destinationaddress = "106 Round Hil Rd.";
+                Quote.trip.destinationaddress2 = "";
+                Quote.trip.destinationcity = "Dobbs Ferry";
+                Quote.trip.destinationstate = "New York";
+                Quote.trip.destinationzip = "10522";
+                Quote.trip.otherinfo = "";
             }
 
             Mapper.Map(Quote, quoteMap);

@@ -148,8 +148,11 @@ namespace TravelingPawsAPI.Repositories
         public bool DoesItLive(int id)
         {
             return _context.Quotes.Any(e => e.QuoteId == id);
+        }
 
-
+        public async Task<Quote> GetQuote(int id)
+        {
+            return await _context.Quotes.FirstOrDefaultAsync(e => e.QuoteId == id);
         }
     }
 }

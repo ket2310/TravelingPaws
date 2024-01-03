@@ -28,18 +28,11 @@ namespace TravelingPawsAPI.Controllers
         }
 
         // GET: api/InMemoryQuotes/5
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Quote>> GetQuote(int id)
-        //{
-        //    var quote = await _context.Quotes.FindAsync(id);
-
-        //    if (quote == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return quote;
-        //}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Quote>> GetQuote(int id)
+        {
+            return Ok(await _quoteRepository.GetQuote(id));
+        }
 
         // PUT: api/InMemoryQuotes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

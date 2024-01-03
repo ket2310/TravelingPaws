@@ -44,9 +44,9 @@ namespace TravelingPaws.Services
             throw new System.NotImplementedException();
         }
 
-        public Task<Quote> GetQuote(int id)
+        public async Task<Quote> GetQuote(int id)
         {
-            throw new System.NotImplementedException();
+            return await _httpClient.GetFromJsonAsync<Quote>($"api/InMemoryQuotes/{id}");
         }
 
         public Task<Quote> UpdateQuote(Quote updatedQuote)

@@ -11,6 +11,7 @@ namespace TravelingPawsAPI.Repositories
     {
         Task<IEnumerable<Quote>> GetQuotes();
         bool DoesItLive(int id);
+        Task<Quote> GetQuote(int id);
         Task<Quote> CreateAQuote(QuoteMap obj);
         Task<Quote> UpdateQuote(Quote Quote);
     }

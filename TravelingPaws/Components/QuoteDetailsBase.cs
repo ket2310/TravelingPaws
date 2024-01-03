@@ -10,14 +10,26 @@ namespace TravelingPaws.Components
 {
     public class QuoteDetailsBase : GlobaldataService
     {
-        public Quote quote { get; set; }
+        public Quote quote { get; set; } = new Quote();
 
         [Parameter]
         public string Id { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
-            // If Id value is not supplied in the URL, use the value 1
+            // If Id value is not supplied in the URL, use the value
+            // 
+            quote = new Quote
+            {
+                petOwner = new PetOwner()
+                {
+                    dog = new Dog(),
+                    cat = new Cat()
+                },
+
+        
+                trip = new Trip()
+            };
             Id = Id ?? "1";
             quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
         }
