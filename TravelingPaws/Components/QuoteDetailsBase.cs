@@ -31,7 +31,11 @@ namespace TravelingPaws.Components
                 trip = new Trip()
             };
             Id = Id ?? "1";
-            quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
+
+            if (Environment.MachineName == "Coyote2" || Environment.MachineName == "roadrunner2")
+                quote = await QuoteService.GetQuote(int.Parse(Id));
+            else
+                quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
         }
     }
 }

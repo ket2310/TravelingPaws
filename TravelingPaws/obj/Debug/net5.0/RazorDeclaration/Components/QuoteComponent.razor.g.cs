@@ -83,27 +83,28 @@ using TravelingPaws.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
+#line 3 "C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
 using TravelingPaws.Pages;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
+#line 4 "C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
 using TravelingPawsAPI.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
+#line 5 "C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
 using TravelingPawsAPI.Enums;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/components/quotecomponent")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/quotecomponent")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/quotecomponent/{Id}")]
     public partial class QuoteComponent : QuoteComponentBase
     {
         #pragma warning disable 1998

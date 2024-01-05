@@ -190,6 +190,7 @@ namespace TravelingPawsAPI.Repositories
 
         public async Task<Quote> GetQuote(int id)
         {
+            int num = 1;
             var quote = await _context.Quotes
                 .Include(p => p.petOwner)
                 .Include(c => c.petOwner.cat)

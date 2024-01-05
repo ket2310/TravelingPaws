@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Components;
+using System;
 using System.Threading.Tasks;
 using TravelingPaws.Services;
 using TravelingPawsAPI.Enums;
@@ -29,8 +30,25 @@ namespace TravelingPaws.Components
 
             if (QuoteId != 0)
             {
-                //Quote = await QuoteService.GetQuote(int.Parse(Id));
-                Quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
+                Quote = new Quote
+                {
+                    petOwner = new PetOwner()
+                    {
+                        dog = new Dog(),
+                        cat = new Cat()
+                    },
+
+
+                    trip = new Trip()
+                };
+                Id = Id ?? "1";
+
+                if (Environment.MachineName == "Coyote2" || Environment.MachineName == "roadrunner2")
+                    Quote = await QuoteService.GetQuote(int.Parse(Id));
+                else
+                    Quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
+
+                Mapper.Map(Quote, quoteMap);
             }
             else
             {
@@ -41,7 +59,7 @@ namespace TravelingPaws.Components
                         dog = new Dog(),
                         cat = new Cat()
                     },
-                    
+
                     TravelType = TravelTypes.TwoWay,
                     trip = new Trip()
                 };
@@ -61,7 +79,7 @@ namespace TravelingPaws.Components
                 Quote.petOwner.dog.Age = 10;
                 Quote.petOwner.dog.Weight = 60;
                 Quote.petOwner.dog.Breed = "Labrador";
-                
+
                 Quote.trip.traveldate = System.DateTime.Now;
                 Quote.trip.returndate = System.DateTime.Now.AddDays(7);
 
@@ -77,9 +95,8 @@ namespace TravelingPaws.Components
                 Quote.trip.destinationstate = "New York";
                 Quote.trip.destinationzip = "10522";
                 Quote.trip.otherinfo = "";
+                Mapper.Map(Quote, quoteMap);
             }
-
-            Mapper.Map(Quote, quoteMap);
         }
        
         protected async Task HandleValidSubmit()
