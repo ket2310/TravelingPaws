@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using TravelingPawsAPI.Maps;
 using TravelingPawsAPI.DataContext;
+using System;
+using Microsoft.AspNetCore.Http;
 
 namespace TravelingPawsAPI.Repositories
 {
@@ -190,15 +192,14 @@ namespace TravelingPawsAPI.Repositories
 
         public async Task<Quote> GetQuote(int id)
         {
-            int num = 1;
-            var quote = await _context.Quotes
-                .Include(p => p.petOwner)
-                .Include(c => c.petOwner.cat)
-                .Include(d => d.petOwner.dog)
-                .Include(t => t.trip)
-                .FirstOrDefaultAsync(e => e.QuoteId == id);
+            var result = await _context.Quotes
+                    .Include(p => p.petOwner)
+                    .Include(c => c.petOwner.cat)
+                    .Include(d => d.petOwner.dog)
+                    .Include(t => t.trip)
+                    .FirstOrDefaultAsync(e => e.QuoteId == id);
 
-            return quote;
+            return result;
         }
     }
 }

@@ -96,6 +96,19 @@ using TravelingPaws.Shared;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
+    
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 30 "C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\Shared\NavMenu.razor"
+
+    private void HandleClick()
+    {
+        NvgMgr.NavigateTo("quotecomponent", true);
+    }
+
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
@@ -104,6 +117,7 @@ using TravelingPaws.Shared;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NvgMgr { get; set; }
     }
 }
 #pragma warning restore 1591

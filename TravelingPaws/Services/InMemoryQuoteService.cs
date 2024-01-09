@@ -49,9 +49,14 @@ namespace TravelingPaws.Services
             return await _httpClient.GetFromJsonAsync<Quote>($"api/InMemoryQuotes/{id}");
         }
 
-        public Task<Quote> UpdateQuote(Quote updatedQuote)
+        public async Task<Quote> UpdateQuote(Quote updatedQuote)
         {
-            throw new System.NotImplementedException();
+            var response = await _httpClient.PutAsJsonAsync<Quote>(url, updatedQuote);
+
+            if (response.IsSuccessStatusCode)
+                return updatedQuote;
+
+            return null;
         }
     }
 }
