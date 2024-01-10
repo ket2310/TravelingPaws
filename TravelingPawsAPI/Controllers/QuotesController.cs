@@ -33,29 +33,29 @@ namespace TravelingPawsAPI.Controllers
 
         // GET: api/Quotes/5
         [HttpGet("{id}")]
-        public  Task<ActionResult<Quote>> GetQuote(int id)
+        public async Task<ActionResult<Quote>> GetQuote(int id)
         {
-           
-            return null;
+
+            return Ok(await _quoteRepository.GetQuote(id));
         }
 
         // PUT: api/Quotes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> PutQuote(int id, Quote quote)
+        [HttpPut]
+        public async Task<ActionResult<Quote>> UpdateQuote(Quote quote)
         {
-            if (id != quote.QuoteId)
-            {
-                return BadRequest();
-            }
-
             try
             {
-                await _quoteRepository.UpdateQuote(quote);
+                var theQuoteToUpdate = _quoteRepository.GetQuote(quote.QuoteId);
+                if (theQuoteToUpdate == null)
+                    return NotFound($"Quote with id of {quote.QuoteId} not found");
+
+
+                return await _quoteRepository.UpdateQuote(quote);
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!QuoteExists(id))
+                if (!QuoteExists(quote.QuoteId))
                 {
                     return NotFound();
                 }
@@ -64,8 +64,6 @@ namespace TravelingPawsAPI.Controllers
                     throw;
                 }
             }
-
-            return NoContent();
         }
 
         // POST: api/Quotes

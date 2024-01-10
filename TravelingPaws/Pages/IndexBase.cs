@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Components;
-using TravelingPaws.Services;
-using TravelingPawsAPI.Models;
+﻿using TravelingPawsAPI.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TravelingPaws.Components;
@@ -16,10 +14,10 @@ namespace TravelingPaws.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            if (Environment.MachineName != "Coyote2" || Environment.MachineName != "roadrunner2")
-                Quotes = await InMemoryQuoteService.GetQuotes();
-            else
+            if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2")
                 Quotes = await QuoteService.GetQuotes();
+            else
+                Quotes = await InMemoryQuoteService.GetQuotes();
 
         }
     }

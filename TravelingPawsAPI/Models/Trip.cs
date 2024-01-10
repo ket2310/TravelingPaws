@@ -8,7 +8,7 @@ namespace TravelingPawsAPI.Models
                           
         public int TripId { get; set; }
 
-        public TravelTypes TravelType { get; set; }
+        public TravelTypes TravelTypeId { get; set; }
         public DateTime traveldate { get; set; }
 
         public DateTime returndate { get; set; }

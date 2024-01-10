@@ -35,8 +35,10 @@ namespace TravelingPaws.Components
             if (QuoteId != 0)
             {
                 PageHeaderText = "Edit Your Quote ";
-                //Quote = await QuoteService.GetQuote(int.Parse(Id));
-                Quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
+                if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2")
+                    Quote = await QuoteService.GetQuote(int.Parse(Id));
+                else
+                    Quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
             }
             else
             {
@@ -58,7 +60,7 @@ namespace TravelingPaws.Components
                 Quote.petOwner.dog.Weight = 60;
                 Quote.petOwner.dog.Breed = "Labrador";
 
-                Quote.trip.TravelType = TravelTypes.TwoWay;
+                Quote.trip.TravelTypeId = TravelTypes.TwoWay;
                 Quote.trip.traveldate = System.DateTime.Now;
                 Quote.trip.returndate = System.DateTime.Now.AddDays(7);
 
@@ -89,13 +91,17 @@ namespace TravelingPaws.Components
 
             if (Quote.QuoteId != 0)
             {
-                //result = await QuoteService.UpdateQuote(Quote);
-                result = await InMemoryQuoteService.UpdateQuote(Quote);
+                if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2")
+                    result = await QuoteService.UpdateQuote(Quote);
+                else
+                    result = await InMemoryQuoteService.UpdateQuote(Quote);
             }
             else
             {
-                //   result = await QuoteService.CreateQuote(Quote);
-                result = await InMemoryQuoteService.CreateQuote(Quote);
+                if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2") 
+                    result = await QuoteService.CreateQuote(Quote);
+                else
+                    result = await InMemoryQuoteService.CreateQuote(Quote);
             }
             if (result != null)
             {

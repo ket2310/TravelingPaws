@@ -46,7 +46,7 @@ namespace TravelingPaws.Services
 
         public async Task<Quote> GetQuote(int id)
         {
-            return await _httpClient.GetFromJsonAsync<Quote>($"api/InMemoryQuotes/{id}");
+            return await _httpClient.GetFromJsonAsync<Quote>($"api/Quotes/{id}");
         }
 
         public async Task<Quote> UpdateQuote(Quote updatedQuote)

@@ -22,28 +22,28 @@ namespace TravelingPawsAPI.DataContext
         public DbSet<Trip> Trips { get; set; }
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<PetOwner>().HasData(new PetOwner
-            {
-                PetOwnerId = 1,
-                FirstName = "Kirk",
-                LastName = "Thomas",
-                Email = "dablumaroon@gmail.com",
-                PhoneNumber = "1234567890",
-                CellNumber = "1234567890",
-            });
+        //    modelBuilder.Entity<PetOwner>().HasData(new PetOwner
+        //    {
+        //        PetOwnerId = 1,
+        //        FirstName = "Kirk",
+        //        LastName = "Thomas",
+        //        Email = "dablumaroon@gmail.com",
+        //        PhoneNumber = "1234567890",
+        //        CellNumber = "1234567890",
+        //    });
 
-            modelBuilder.Entity<Quote>().HasData(new Quote
-            {
-                QuoteId = 1,
-                petOwnerId = 1,
-                TravelType = TravelTypes.Oneway
-            });
+        //    modelBuilder.Entity<Quote>().HasData(new Quote
+        //    {
+        //        QuoteId = 1,
+        //        petOwnerId = 1,
+        //        TravelTypeId = TravelTypeIds.Oneway
+        //    });
 
 
-            }
+        //    }
         }
 }

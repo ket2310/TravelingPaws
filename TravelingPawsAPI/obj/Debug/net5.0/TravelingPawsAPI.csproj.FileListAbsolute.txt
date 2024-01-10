@@ -52,15 +52,9 @@ C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\runt
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\scopedcss\bundle\TravelingPawsAPI.styles.css
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\TravelingPawsAPI.StaticWebAssets.Manifest.cache
-C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\TravelingPawsAPI.StaticWebAssets.Pack.cache
-C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.TravelingPawsAPI.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.build.TravelingPawsAPI.props
-C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.TravelingPawsAPI.props
-C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.TravelingPawsAPI.props
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.RazorTargetAssemblyInfo.cache
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.csproj.CopyComplete
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.dll
-C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\refint\TravelingPawsAPI.dll
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.pdb
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.genruntimeconfig.cache
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\ref\TravelingPawsAPI.dll
@@ -274,3 +268,9 @@ C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.pdb
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.genruntimeconfig.cache
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\TravelingPawsAPI.csprojAssemblyReference.cache
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\TravelingPawsAPI.StaticWebAssets.Pack.cache
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.TravelingPawsAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.build.TravelingPawsAPI.props
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.TravelingPawsAPI.props
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.TravelingPawsAPI.props
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\refint\TravelingPawsAPI.dll

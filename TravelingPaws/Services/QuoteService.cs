@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using System;
 
 namespace TravelingPaws.Services
 {
@@ -31,7 +32,7 @@ namespace TravelingPaws.Services
 
         public async Task<Quote> CreateQuote(Quote newQuote)
         {
-            var response = await _httpClient.PostAsJsonAsync<Quote>("api/Quotes", newQuote);
+            var response = await _httpClient.PostAsJsonAsync<Quote>(url, newQuote);
 
             if (response.IsSuccessStatusCode)
                 return newQuote;
@@ -44,14 +45,19 @@ namespace TravelingPaws.Services
             throw new System.NotImplementedException();
         }
 
-        public Task<Quote> GetQuote(int id)
-        {
-            throw new System.NotImplementedException();
+        public async Task<Quote> GetQuote(int id)
+        {         
+            return await _httpClient.GetFromJsonAsync<Quote>(url + "/" + id.ToString());
         }
 
-        public Task<Quote> UpdateQuote(Quote updatedQuote)
+        public async Task<Quote> UpdateQuote(Quote updatedQuote)
         {
-            throw new System.NotImplementedException();
+            var response = await _httpClient.PutAsJsonAsync<Quote>(url, updatedQuote);
+
+            if (response.IsSuccessStatusCode)
+                return updatedQuote;
+
+            return null;
         }
     }
 }
