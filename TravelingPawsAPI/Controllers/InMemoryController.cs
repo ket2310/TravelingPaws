@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MailKit.Net.Smtp;
+using MailKit.Security;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MimeKit;
+using MimeKit.Text;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TravelingPawsAPI.Maps;
@@ -15,9 +19,12 @@ namespace TravelingPawsAPI.Controllers
     {
         private readonly IInMemoryQuoteRepository _quoteRepository;
 
-        public InMemoryQuotesController(IInMemoryQuoteRepository inMemoryQuoteRepository)
+        public IEmailService _emailService { get; }
+
+        public InMemoryQuotesController(IInMemoryQuoteRepository inMemoryQuoteRepository, IEmailService emailService)
         {
             _quoteRepository = inMemoryQuoteRepository;
+            _emailService = emailService;
         }
 
         // GET: api/InMemoryQuotes
@@ -90,6 +97,15 @@ namespace TravelingPawsAPI.Controllers
         private bool QuoteExists(int id)
         {
             return _quoteRepository.DoesItLive(id);
+        }
+
+        [HttpPost("SendEmail")]
+        public IActionResult SendEmail(EmailDTO request)
+        {
+            _emailService.SendEmail(request);
+
+            return Ok();
+
         }
     }
 }

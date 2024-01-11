@@ -274,3 +274,10 @@ C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\stat
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.TravelingPawsAPI.props
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.TravelingPawsAPI.props
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPawsAPI\obj\Debug\net5.0\refint\TravelingPawsAPI.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\BouncyCastle.Cryptography.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\MailKit.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\MimeKit.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\System.Formats.Asn1.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPawsAPI\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll

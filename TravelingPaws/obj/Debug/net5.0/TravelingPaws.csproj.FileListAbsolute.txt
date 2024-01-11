@@ -375,3 +375,9 @@ C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\obj\Debug\net5.0\staticw
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.TravelingPaws.props
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.TravelingPaws.props
 C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\obj\Debug\net5.0\refint\TravelingPaws.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\BouncyCastle.Cryptography.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\MailKit.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\MimeKit.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Formats.Asn1.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll

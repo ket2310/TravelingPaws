@@ -31,6 +31,7 @@ namespace TravelingPawsAPI
             services.AddDbContext<QuoteInMemoryContext>();
             services.AddScoped<IQuoteRepository, QuoteRepository>();
             services.AddScoped<IInMemoryQuoteRepository, InMemoryQuoteRepository>();
+            services.AddScoped<IEmailService, EmailService>();
 
 
         }
