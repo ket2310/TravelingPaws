@@ -94,5 +94,26 @@ namespace TravelingPawsAPI.Controllers
         {
             return _quoteRepository.DoesItLive(id);
         }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<Quote>> DeleteQuote(int id)
+        {
+            try
+            {
+                var quoteToDelete = await _quoteRepository.GetQuote(id);
+
+                if (quoteToDelete == null)
+                {
+                    return NotFound($"Employee with Id = {id} not found");
+                }
+
+                return await _quoteRepository.DeleteQuote(id);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error deleting data");
+            }
+        }
     }
 }

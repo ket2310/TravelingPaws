@@ -381,3 +381,10 @@ C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\ne
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Formats.Asn1.dll
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\kirthomas\source\repos\ket2310\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\bin\Debug\net5.0\TravelingPawsAPI.StaticWebAssets.xml
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\bin\Debug\net5.0\BouncyCastle.Cryptography.dll
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\bin\Debug\net5.0\MailKit.dll
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\bin\Debug\net5.0\MimeKit.dll
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Formats.Asn1.dll
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -180,6 +181,20 @@ namespace TravelingPawsAPI.Repositories
                     .FirstOrDefaultAsync(e => e.QuoteId == id);
 
             return result;
+        }
+
+        public async Task<Quote> DeleteQuote(int quoteId)
+        {
+            var result = await _context.Quotes
+            .FirstOrDefaultAsync(q => q.QuoteId == quoteId);
+            if (result != null)
+            {
+                _context.Quotes.Remove(result);
+                await _context.SaveChangesAsync();
+                return result;
+            }
+
+            return null;
         }
     }
 }

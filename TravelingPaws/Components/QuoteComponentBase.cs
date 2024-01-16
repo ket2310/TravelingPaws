@@ -83,6 +83,11 @@ namespace TravelingPaws.Components
 
         }
 
+        protected async Task Delete_Click()
+        {
+            await QuoteService.DeleteQuote(Quote.QuoteId);
+            NavigationManager.NavigateTo("/");
+        }
         protected async Task HandleValidSubmit()
         {
             Mapper.Map(quoteMap, Quote);

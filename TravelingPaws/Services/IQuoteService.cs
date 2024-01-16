@@ -12,5 +12,7 @@ namespace TravelingPaws.Services
         Task<Quote> GetQuote(int id);
         Task<Quote> UpdateQuote(Quote updatedQuote);
         Task<Quote> CreateQuote(Quote newQuote);
+
+        Task DeleteQuote(int id);
     }
 }

@@ -59,5 +59,10 @@ namespace TravelingPaws.Services
 
             return null;
         }
+
+        public  async Task DeleteQuote(int id)
+        {
+            await _httpClient.DeleteAsync(url + "/" + id.ToString());
+        }
     }
 }
