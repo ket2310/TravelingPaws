@@ -32,7 +32,7 @@ namespace TravelingPaws.Components
             };
             Id = Id ?? "1";
 
-            if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2")
+            if (Environment.MachineName == "COYOTE2" || Environment.MachineName == "ROADRUNNER2")
                 quote = await QuoteService.GetQuote(int.Parse(Id));
             else
                 quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));

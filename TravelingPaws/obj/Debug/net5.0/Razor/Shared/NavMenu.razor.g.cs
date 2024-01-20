@@ -131,9 +131,9 @@ using TravelingPaws.Shared;
             __builder.AddAttribute(18, "class", "nav-item px-3");
             __builder.AddAttribute(19, "b-agv72df0ec");
             __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Routing.NavLink>(20);
-            __builder.AddAttribute(21, "class", (object)("nav-link"));
-            __builder.AddAttribute(22, "href", (object)(""));
-            __builder.AddAttribute(23, "Match", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.Routing.NavLinkMatch>(
+            __builder.AddAttribute(21, "class", "nav-link");
+            __builder.AddAttribute(22, "href", "");
+            __builder.AddAttribute(23, "Match", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.Routing.NavLinkMatch>(
 #nullable restore
 #line 11 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Shared\NavMenu.razor"
                                                      NavLinkMatch.All
@@ -141,7 +141,7 @@ using TravelingPaws.Shared;
 #line default
 #line hidden
 #nullable disable
-            )));
+            ));
             __builder.AddAttribute(24, "ChildContent", (global::Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.AddMarkupContent(25, "<span class=\"oi oi-home\" aria-hidden=\"true\" b-agv72df0ec></span> Home\r\n            ");
             }
@@ -153,9 +153,9 @@ using TravelingPaws.Shared;
             __builder.AddAttribute(28, "class", "nav-item px-3");
             __builder.AddAttribute(29, "b-agv72df0ec");
             __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Routing.NavLink>(30);
-            __builder.AddAttribute(31, "class", (object)("nav-link"));
-            __builder.AddAttribute(32, "href", (object)("quotecomponent"));
-            __builder.AddAttribute(33, "onclick", (object)(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+            __builder.AddAttribute(31, "class", "nav-link");
+            __builder.AddAttribute(32, "href", "quotecomponent");
+            __builder.AddAttribute(33, "onclick", global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 16 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Shared\NavMenu.razor"
                                                                       HandleClick
@@ -163,7 +163,7 @@ using TravelingPaws.Shared;
 #line default
 #line hidden
 #nullable disable
-            )));
+            ));
             __builder.AddAttribute(34, "ChildContent", (global::Microsoft.AspNetCore.Components.RenderFragment)((__builder2) => {
                 __builder2.AddMarkupContent(35, "<span class=\"oi oi-plus\" aria-hidden=\"true\" b-agv72df0ec></span> Create a Quote\r\n            ");
             }

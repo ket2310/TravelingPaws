@@ -134,7 +134,7 @@ __builder.AddContent(5, PageHeaderText);
             __builder.AddMarkupContent(15, "<p><strong>Request A Quote</strong></p>\r\n                    <hr>\r\n                    ");
             __builder.AddMarkupContent(16, "<h3>Your Contact Information</h3>\r\n                    ");
             __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.EditForm>(17);
-            __builder.AddAttribute(18, "Model", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Object>(
+            __builder.AddAttribute(18, "Model", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Object>(
 #nullable restore
 #line 96 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                       quoteMap
@@ -142,8 +142,8 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-            )));
-            __builder.AddAttribute(19, "OnValidSubmit", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::Microsoft.AspNetCore.Components.Forms.EditContext>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
+            ));
+            __builder.AddAttribute(19, "OnValidSubmit", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::Microsoft.AspNetCore.Components.Forms.EditContext>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::Microsoft.AspNetCore.Components.Forms.EditContext>(this, 
 #nullable restore
 #line 96 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                                HandleValidSubmit
@@ -151,15 +151,15 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-            ))));
+            )));
             __builder.AddAttribute(20, "ChildContent", (global::Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.Forms.EditContext>)((context) => (__builder2) => {
                 __builder2.OpenElement(21, "div");
                 __builder2.AddMarkupContent(22, "<label> Your First Name:</label>&nbsp;\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(23);
-                __builder2.AddAttribute(24, "id", (object)("firstName"));
-                __builder2.AddAttribute(25, "class", (object)("form-control"));
-                __builder2.AddAttribute(26, "placeholder", (object)("First Name"));
-                __builder2.AddAttribute(27, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(24, "id", "firstName");
+                __builder2.AddAttribute(25, "class", "form-control");
+                __builder2.AddAttribute(26, "placeholder", "First Name");
+                __builder2.AddAttribute(27, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 99 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                                    quoteMap.petOwner.FirstName
@@ -167,9 +167,9 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(28, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.FirstName = __value, quoteMap.petOwner.FirstName)))));
-                __builder2.AddAttribute(29, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.FirstName)));
+                ));
+                __builder2.AddAttribute(28, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.FirstName = __value, quoteMap.petOwner.FirstName))));
+                __builder2.AddAttribute(29, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.FirstName));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(30, "\r\n                            ");
                 global::__Blazor.TravelingPaws.Components.QuoteComponent.TypeInference.CreateValidationMessage_0(__builder2, 31, 32, 
@@ -184,10 +184,10 @@ __builder.AddContent(5, PageHeaderText);
                 __builder2.AddMarkupContent(33, "\r\n\r\n                            ");
                 __builder2.AddMarkupContent(34, "<label> Your Last Name:</label>&nbsp;\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(35);
-                __builder2.AddAttribute(36, "id", (object)("lastName"));
-                __builder2.AddAttribute(37, "class", (object)("form-control"));
-                __builder2.AddAttribute(38, "placeholder", (object)("Last Name"));
-                __builder2.AddAttribute(39, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(36, "id", "lastName");
+                __builder2.AddAttribute(37, "class", "form-control");
+                __builder2.AddAttribute(38, "placeholder", "Last Name");
+                __builder2.AddAttribute(39, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 105 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.petOwner.LastName
@@ -195,9 +195,9 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(40, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.LastName = __value, quoteMap.petOwner.LastName)))));
-                __builder2.AddAttribute(41, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.LastName)));
+                ));
+                __builder2.AddAttribute(40, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.LastName = __value, quoteMap.petOwner.LastName))));
+                __builder2.AddAttribute(41, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.LastName));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(42, "\r\n                            ");
                 global::__Blazor.TravelingPaws.Components.QuoteComponent.TypeInference.CreateValidationMessage_1(__builder2, 43, 44, 
@@ -212,10 +212,10 @@ __builder.AddContent(5, PageHeaderText);
                 __builder2.AddMarkupContent(45, "\r\n\r\n                            <br>\r\n                            ");
                 __builder2.AddMarkupContent(46, "<label>E-mail:</label>&nbsp;\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(47);
-                __builder2.AddAttribute(48, "id", (object)("email"));
-                __builder2.AddAttribute(49, "class", (object)("form-control"));
-                __builder2.AddAttribute(50, "placeholder", (object)("Email"));
-                __builder2.AddAttribute(51, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(48, "id", "email");
+                __builder2.AddAttribute(49, "class", "form-control");
+                __builder2.AddAttribute(50, "placeholder", "Email");
+                __builder2.AddAttribute(51, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 111 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.petOwner.Email
@@ -223,9 +223,9 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(52, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.Email = __value, quoteMap.petOwner.Email)))));
-                __builder2.AddAttribute(53, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.Email)));
+                ));
+                __builder2.AddAttribute(52, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.Email = __value, quoteMap.petOwner.Email))));
+                __builder2.AddAttribute(53, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.Email));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(54, "\r\n                            ");
                 global::__Blazor.TravelingPaws.Components.QuoteComponent.TypeInference.CreateValidationMessage_2(__builder2, 55, 56, 
@@ -240,10 +240,10 @@ __builder.AddContent(5, PageHeaderText);
                 __builder2.AddMarkupContent(57, "\r\n\r\n\r\n                            <br>\r\n                            ");
                 __builder2.AddMarkupContent(58, "<label> Phone Number:</label>&nbsp;\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(59);
-                __builder2.AddAttribute(60, "id", (object)("phonenumber"));
-                __builder2.AddAttribute(61, "class", (object)("form-control"));
-                __builder2.AddAttribute(62, "placeholder", (object)("Phone Number"));
-                __builder2.AddAttribute(63, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(60, "id", "phonenumber");
+                __builder2.AddAttribute(61, "class", "form-control");
+                __builder2.AddAttribute(62, "placeholder", "Phone Number");
+                __builder2.AddAttribute(63, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 118 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.petOwner.PhoneNumber
@@ -251,9 +251,9 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(64, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.PhoneNumber = __value, quoteMap.petOwner.PhoneNumber)))));
-                __builder2.AddAttribute(65, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.PhoneNumber)));
+                ));
+                __builder2.AddAttribute(64, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.PhoneNumber = __value, quoteMap.petOwner.PhoneNumber))));
+                __builder2.AddAttribute(65, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.PhoneNumber));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(66, "\r\n                            ");
                 global::__Blazor.TravelingPaws.Components.QuoteComponent.TypeInference.CreateValidationMessage_3(__builder2, 67, 68, 
@@ -268,10 +268,10 @@ __builder.AddContent(5, PageHeaderText);
                 __builder2.AddMarkupContent(69, "\r\n                            <br>\r\n                            ");
                 __builder2.AddMarkupContent(70, "<label>Cell Phone:</label>&nbsp;\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(71);
-                __builder2.AddAttribute(72, "id", (object)("cellphonw"));
-                __builder2.AddAttribute(73, "class", (object)("form-control"));
-                __builder2.AddAttribute(74, "placeholder", (object)("Cell Phone"));
-                __builder2.AddAttribute(75, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(72, "id", "cellphonw");
+                __builder2.AddAttribute(73, "class", "form-control");
+                __builder2.AddAttribute(74, "placeholder", "Cell Phone");
+                __builder2.AddAttribute(75, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 123 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.petOwner.CellNumber
@@ -279,9 +279,9 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(76, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.CellNumber = __value, quoteMap.petOwner.CellNumber)))));
-                __builder2.AddAttribute(77, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.CellNumber)));
+                ));
+                __builder2.AddAttribute(76, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.CellNumber = __value, quoteMap.petOwner.CellNumber))));
+                __builder2.AddAttribute(77, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.CellNumber));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(78, "\r\n                            ");
                 global::__Blazor.TravelingPaws.Components.QuoteComponent.TypeInference.CreateValidationMessage_4(__builder2, 79, 80, 
@@ -319,10 +319,10 @@ __builder.AddContent(5, PageHeaderText);
                 __builder2.AddMarkupContent(95, "\r\n                            <br>\r\n                            ");
                 __builder2.AddMarkupContent(96, "<label> Breed:</label>&nbsp;\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(97);
-                __builder2.AddAttribute(98, "id", (object)("breed"));
-                __builder2.AddAttribute(99, "class", (object)("form-control"));
-                __builder2.AddAttribute(100, "placeholder", (object)("Breed"));
-                __builder2.AddAttribute(101, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(98, "id", "breed");
+                __builder2.AddAttribute(99, "class", "form-control");
+                __builder2.AddAttribute(100, "placeholder", "Breed");
+                __builder2.AddAttribute(101, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 140 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.petOwner.cat.Breed
@@ -330,9 +330,9 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(102, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.cat.Breed = __value, quoteMap.petOwner.cat.Breed)))));
-                __builder2.AddAttribute(103, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.cat.Breed)));
+                ));
+                __builder2.AddAttribute(102, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.cat.Breed = __value, quoteMap.petOwner.cat.Breed))));
+                __builder2.AddAttribute(103, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.cat.Breed));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(104, "\r\n                            ");
                 global::__Blazor.TravelingPaws.Components.QuoteComponent.TypeInference.CreateValidationMessage_7(__builder2, 105, 106, 
@@ -410,10 +410,10 @@ __builder.AddContent(5, PageHeaderText);
                 __builder2.AddMarkupContent(143, "\r\n                            <br>\r\n                            ");
                 __builder2.AddMarkupContent(144, "<label> Breed:</label>&nbsp;\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(145);
-                __builder2.AddAttribute(146, "id", (object)("breed"));
-                __builder2.AddAttribute(147, "class", (object)("form-control"));
-                __builder2.AddAttribute(148, "placeholder", (object)("Breed"));
-                __builder2.AddAttribute(149, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(146, "id", "breed");
+                __builder2.AddAttribute(147, "class", "form-control");
+                __builder2.AddAttribute(148, "placeholder", "Breed");
+                __builder2.AddAttribute(149, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 161 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.petOwner.dog.Breed
@@ -421,9 +421,9 @@ __builder.AddContent(5, PageHeaderText);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(150, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.dog.Breed = __value, quoteMap.petOwner.dog.Breed)))));
-                __builder2.AddAttribute(151, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.dog.Breed)));
+                ));
+                __builder2.AddAttribute(150, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.petOwner.dog.Breed = __value, quoteMap.petOwner.dog.Breed))));
+                __builder2.AddAttribute(151, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.petOwner.dog.Breed));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(152, "\r\n                            ");
                 global::__Blazor.TravelingPaws.Components.QuoteComponent.TypeInference.CreateValidationMessage_14(__builder2, 153, 154, 
@@ -570,10 +570,10 @@ __builder3.AddContent(199, item);
                 __builder2.AddMarkupContent(219, "<h3><strong>Pickup Address</strong></h3>\r\n\r\n                            ");
                 __builder2.AddMarkupContent(220, "<label>Address Line 1</label><br>\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(221);
-                __builder2.AddAttribute(222, "id", (object)("pAddress1"));
-                __builder2.AddAttribute(223, "class", (object)("form-control"));
-                __builder2.AddAttribute(224, "placeholder", (object)("Address 1"));
-                __builder2.AddAttribute(225, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(222, "id", "pAddress1");
+                __builder2.AddAttribute(223, "class", "form-control");
+                __builder2.AddAttribute(224, "placeholder", "Address 1");
+                __builder2.AddAttribute(225, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 207 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.trip.pickupaddress
@@ -581,17 +581,17 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(226, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupaddress = __value, quoteMap.trip.pickupaddress)))));
-                __builder2.AddAttribute(227, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupaddress)));
+                ));
+                __builder2.AddAttribute(226, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupaddress = __value, quoteMap.trip.pickupaddress))));
+                __builder2.AddAttribute(227, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupaddress));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(228, "\r\n                            ");
                 __builder2.AddMarkupContent(229, "<label>Address Line 2</label><br>\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(230);
-                __builder2.AddAttribute(231, "id", (object)("pAddress2"));
-                __builder2.AddAttribute(232, "class", (object)("form-control"));
-                __builder2.AddAttribute(233, "placeholder", (object)("Address 2"));
-                __builder2.AddAttribute(234, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(231, "id", "pAddress2");
+                __builder2.AddAttribute(232, "class", "form-control");
+                __builder2.AddAttribute(233, "placeholder", "Address 2");
+                __builder2.AddAttribute(234, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 210 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.trip.pickupaddress2
@@ -599,9 +599,9 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(235, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupaddress2 = __value, quoteMap.trip.pickupaddress2)))));
-                __builder2.AddAttribute(236, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupaddress2)));
+                ));
+                __builder2.AddAttribute(235, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupaddress2 = __value, quoteMap.trip.pickupaddress2))));
+                __builder2.AddAttribute(236, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupaddress2));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(237, "\r\n                            ");
                 __builder2.OpenElement(238, "table");
@@ -609,10 +609,10 @@ __builder3.AddContent(199, item);
                 __builder2.OpenElement(240, "tr");
                 __builder2.OpenElement(241, "td");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(242);
-                __builder2.AddAttribute(243, "id", (object)("pickupCity"));
-                __builder2.AddAttribute(244, "class", (object)("form-control"));
-                __builder2.AddAttribute(245, "placeholder", (object)("Pickup City"));
-                __builder2.AddAttribute(246, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(243, "id", "pickupCity");
+                __builder2.AddAttribute(244, "class", "form-control");
+                __builder2.AddAttribute(245, "placeholder", "Pickup City");
+                __builder2.AddAttribute(246, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 220 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                                 quoteMap.trip.pickupcity
@@ -620,18 +620,18 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(247, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupcity = __value, quoteMap.trip.pickupcity)))));
-                __builder2.AddAttribute(248, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupcity)));
+                ));
+                __builder2.AddAttribute(247, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupcity = __value, quoteMap.trip.pickupcity))));
+                __builder2.AddAttribute(248, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupcity));
                 __builder2.CloseComponent();
                 __builder2.CloseElement();
                 __builder2.AddMarkupContent(249, "\r\n                                    ");
                 __builder2.OpenElement(250, "td");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(251);
-                __builder2.AddAttribute(252, "id", (object)("pickupState"));
-                __builder2.AddAttribute(253, "class", (object)("form-control"));
-                __builder2.AddAttribute(254, "placeholder", (object)("Pickup State"));
-                __builder2.AddAttribute(255, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(252, "id", "pickupState");
+                __builder2.AddAttribute(253, "class", "form-control");
+                __builder2.AddAttribute(254, "placeholder", "Pickup State");
+                __builder2.AddAttribute(255, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 224 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                                 quoteMap.trip.pickupstate
@@ -639,18 +639,18 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(256, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupstate = __value, quoteMap.trip.pickupstate)))));
-                __builder2.AddAttribute(257, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupstate)));
+                ));
+                __builder2.AddAttribute(256, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupstate = __value, quoteMap.trip.pickupstate))));
+                __builder2.AddAttribute(257, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupstate));
                 __builder2.CloseComponent();
                 __builder2.CloseElement();
                 __builder2.AddMarkupContent(258, "\r\n                                    ");
                 __builder2.OpenElement(259, "td");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(260);
-                __builder2.AddAttribute(261, "id", (object)("pickupZip"));
-                __builder2.AddAttribute(262, "class", (object)("form-control"));
-                __builder2.AddAttribute(263, "placeholder", (object)("Pickup Zip"));
-                __builder2.AddAttribute(264, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(261, "id", "pickupZip");
+                __builder2.AddAttribute(262, "class", "form-control");
+                __builder2.AddAttribute(263, "placeholder", "Pickup Zip");
+                __builder2.AddAttribute(264, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 228 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                                 quoteMap.trip.pickupzip
@@ -658,9 +658,9 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(265, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupzip = __value, quoteMap.trip.pickupzip)))));
-                __builder2.AddAttribute(266, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupzip)));
+                ));
+                __builder2.AddAttribute(265, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.pickupzip = __value, quoteMap.trip.pickupzip))));
+                __builder2.AddAttribute(266, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.pickupzip));
                 __builder2.CloseComponent();
                 __builder2.CloseElement();
                 __builder2.CloseElement();
@@ -669,10 +669,10 @@ __builder3.AddContent(199, item);
                 __builder2.AddMarkupContent(268, "<h3><strong>Destination Address</strong></h3>\r\n                            ");
                 __builder2.AddMarkupContent(269, "<label>Address Line 1</label><br>\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(270);
-                __builder2.AddAttribute(271, "id", (object)("dAddress1"));
-                __builder2.AddAttribute(272, "class", (object)("form-control"));
-                __builder2.AddAttribute(273, "placeholder", (object)("Address 1"));
-                __builder2.AddAttribute(274, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(271, "id", "dAddress1");
+                __builder2.AddAttribute(272, "class", "form-control");
+                __builder2.AddAttribute(273, "placeholder", "Address 1");
+                __builder2.AddAttribute(274, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 237 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.trip.destinationaddress
@@ -680,17 +680,17 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(275, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationaddress = __value, quoteMap.trip.destinationaddress)))));
-                __builder2.AddAttribute(276, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationaddress)));
+                ));
+                __builder2.AddAttribute(275, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationaddress = __value, quoteMap.trip.destinationaddress))));
+                __builder2.AddAttribute(276, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationaddress));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(277, "\r\n                            ");
                 __builder2.AddMarkupContent(278, "<label>Address Line 2</label><br>\r\n                            ");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(279);
-                __builder2.AddAttribute(280, "id", (object)("dAddress2"));
-                __builder2.AddAttribute(281, "class", (object)("form-control"));
-                __builder2.AddAttribute(282, "placeholder", (object)("Address 2"));
-                __builder2.AddAttribute(283, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(280, "id", "dAddress2");
+                __builder2.AddAttribute(281, "class", "form-control");
+                __builder2.AddAttribute(282, "placeholder", "Address 2");
+                __builder2.AddAttribute(283, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 240 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                     quoteMap.trip.destinationaddress2
@@ -698,9 +698,9 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(284, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationaddress2 = __value, quoteMap.trip.destinationaddress2)))));
-                __builder2.AddAttribute(285, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationaddress2)));
+                ));
+                __builder2.AddAttribute(284, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationaddress2 = __value, quoteMap.trip.destinationaddress2))));
+                __builder2.AddAttribute(285, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationaddress2));
                 __builder2.CloseComponent();
                 __builder2.AddMarkupContent(286, "\r\n                            ");
                 __builder2.OpenElement(287, "table");
@@ -708,10 +708,10 @@ __builder3.AddContent(199, item);
                 __builder2.OpenElement(289, "tr");
                 __builder2.OpenElement(290, "td");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(291);
-                __builder2.AddAttribute(292, "id", (object)("destinationCity"));
-                __builder2.AddAttribute(293, "class", (object)("form-control"));
-                __builder2.AddAttribute(294, "placeholder", (object)("Pickup City"));
-                __builder2.AddAttribute(295, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(292, "id", "destinationCity");
+                __builder2.AddAttribute(293, "class", "form-control");
+                __builder2.AddAttribute(294, "placeholder", "Pickup City");
+                __builder2.AddAttribute(295, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 250 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                                 quoteMap.trip.destinationcity
@@ -719,18 +719,18 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(296, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationcity = __value, quoteMap.trip.destinationcity)))));
-                __builder2.AddAttribute(297, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationcity)));
+                ));
+                __builder2.AddAttribute(296, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationcity = __value, quoteMap.trip.destinationcity))));
+                __builder2.AddAttribute(297, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationcity));
                 __builder2.CloseComponent();
                 __builder2.CloseElement();
                 __builder2.AddMarkupContent(298, "\r\n                                    ");
                 __builder2.OpenElement(299, "td");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(300);
-                __builder2.AddAttribute(301, "id", (object)("destinationState"));
-                __builder2.AddAttribute(302, "class", (object)("form-control"));
-                __builder2.AddAttribute(303, "placeholder", (object)("Pickup State"));
-                __builder2.AddAttribute(304, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(301, "id", "destinationState");
+                __builder2.AddAttribute(302, "class", "form-control");
+                __builder2.AddAttribute(303, "placeholder", "Pickup State");
+                __builder2.AddAttribute(304, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 254 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                                 quoteMap.trip.destinationstate
@@ -738,18 +738,18 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(305, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationstate = __value, quoteMap.trip.destinationstate)))));
-                __builder2.AddAttribute(306, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationstate)));
+                ));
+                __builder2.AddAttribute(305, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationstate = __value, quoteMap.trip.destinationstate))));
+                __builder2.AddAttribute(306, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationstate));
                 __builder2.CloseComponent();
                 __builder2.CloseElement();
                 __builder2.AddMarkupContent(307, "\r\n                                    ");
                 __builder2.OpenElement(308, "td");
                 __builder2.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputText>(309);
-                __builder2.AddAttribute(310, "id", (object)("destinationZip"));
-                __builder2.AddAttribute(311, "class", (object)("form-control"));
-                __builder2.AddAttribute(312, "placeholder", (object)("Pickup Zip"));
-                __builder2.AddAttribute(313, "Value", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
+                __builder2.AddAttribute(310, "id", "destinationZip");
+                __builder2.AddAttribute(311, "class", "form-control");
+                __builder2.AddAttribute(312, "placeholder", "Pickup Zip");
+                __builder2.AddAttribute(313, "Value", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.String>(
 #nullable restore
 #line 258 "C:\Users\dablu\source\repos\TravelingPaws\TravelingPaws\Components\QuoteComponent.razor"
                                                                 quoteMap.trip.destinationzip
@@ -757,9 +757,9 @@ __builder3.AddContent(199, item);
 #line default
 #line hidden
 #nullable disable
-                )));
-                __builder2.AddAttribute(314, "ValueChanged", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationzip = __value, quoteMap.trip.destinationzip)))));
-                __builder2.AddAttribute(315, "ValueExpression", (object)(global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationzip)));
+                ));
+                __builder2.AddAttribute(314, "ValueChanged", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::Microsoft.AspNetCore.Components.EventCallback<global::System.String>>(global::Microsoft.AspNetCore.Components.EventCallback.Factory.Create<global::System.String>(this, global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.CreateInferredEventCallback(this, __value => quoteMap.trip.destinationzip = __value, quoteMap.trip.destinationzip))));
+                __builder2.AddAttribute(315, "ValueExpression", global::Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<global::System.Linq.Expressions.Expression<System.Func<System.String>>>(() => quoteMap.trip.destinationzip));
                 __builder2.CloseComponent();
                 __builder2.CloseElement();
                 __builder2.CloseElement();
@@ -816,177 +816,177 @@ namespace __Blazor.TravelingPaws.Components.QuoteComponent
         public static void CreateValidationMessage_0<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_1<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_2<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_3<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_4<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateInputNumber_5<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, global::System.Object __arg1, int __seq2, global::System.Object __arg2, int __seq3, TValue __arg3, int __seq4, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg4, int __seq5, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg5)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "id", (object)__arg0);
-        __builder.AddAttribute(__seq1, "class", (object)__arg1);
-        __builder.AddAttribute(__seq2, "placeholder", (object)__arg2);
-        __builder.AddAttribute(__seq3, "Value", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ValueChanged", (object)__arg4);
-        __builder.AddAttribute(__seq5, "ValueExpression", (object)__arg5);
+        __builder.AddAttribute(__seq0, "id", __arg0);
+        __builder.AddAttribute(__seq1, "class", __arg1);
+        __builder.AddAttribute(__seq2, "placeholder", __arg2);
+        __builder.AddAttribute(__seq3, "Value", __arg3);
+        __builder.AddAttribute(__seq4, "ValueChanged", __arg4);
+        __builder.AddAttribute(__seq5, "ValueExpression", __arg5);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_6<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_7<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateInputNumber_8<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, global::System.Object __arg1, int __seq2, global::System.Object __arg2, int __seq3, TValue __arg3, int __seq4, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg4, int __seq5, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg5)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "id", (object)__arg0);
-        __builder.AddAttribute(__seq1, "class", (object)__arg1);
-        __builder.AddAttribute(__seq2, "placeholder", (object)__arg2);
-        __builder.AddAttribute(__seq3, "Value", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ValueChanged", (object)__arg4);
-        __builder.AddAttribute(__seq5, "ValueExpression", (object)__arg5);
+        __builder.AddAttribute(__seq0, "id", __arg0);
+        __builder.AddAttribute(__seq1, "class", __arg1);
+        __builder.AddAttribute(__seq2, "placeholder", __arg2);
+        __builder.AddAttribute(__seq3, "Value", __arg3);
+        __builder.AddAttribute(__seq4, "ValueChanged", __arg4);
+        __builder.AddAttribute(__seq5, "ValueExpression", __arg5);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_9<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateInputNumber_10<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, global::System.Object __arg1, int __seq2, global::System.Object __arg2, int __seq3, TValue __arg3, int __seq4, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg4, int __seq5, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg5)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "id", (object)__arg0);
-        __builder.AddAttribute(__seq1, "class", (object)__arg1);
-        __builder.AddAttribute(__seq2, "placeholder", (object)__arg2);
-        __builder.AddAttribute(__seq3, "Value", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ValueChanged", (object)__arg4);
-        __builder.AddAttribute(__seq5, "ValueExpression", (object)__arg5);
+        __builder.AddAttribute(__seq0, "id", __arg0);
+        __builder.AddAttribute(__seq1, "class", __arg1);
+        __builder.AddAttribute(__seq2, "placeholder", __arg2);
+        __builder.AddAttribute(__seq3, "Value", __arg3);
+        __builder.AddAttribute(__seq4, "ValueChanged", __arg4);
+        __builder.AddAttribute(__seq5, "ValueExpression", __arg5);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_11<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateInputNumber_12<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, global::System.Object __arg1, int __seq2, global::System.Object __arg2, int __seq3, TValue __arg3, int __seq4, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg4, int __seq5, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg5)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "id", (object)__arg0);
-        __builder.AddAttribute(__seq1, "class", (object)__arg1);
-        __builder.AddAttribute(__seq2, "placeholder", (object)__arg2);
-        __builder.AddAttribute(__seq3, "Value", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ValueChanged", (object)__arg4);
-        __builder.AddAttribute(__seq5, "ValueExpression", (object)__arg5);
+        __builder.AddAttribute(__seq0, "id", __arg0);
+        __builder.AddAttribute(__seq1, "class", __arg1);
+        __builder.AddAttribute(__seq2, "placeholder", __arg2);
+        __builder.AddAttribute(__seq3, "Value", __arg3);
+        __builder.AddAttribute(__seq4, "ValueChanged", __arg4);
+        __builder.AddAttribute(__seq5, "ValueExpression", __arg5);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_13<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_14<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateInputNumber_15<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, global::System.Object __arg1, int __seq2, global::System.Object __arg2, int __seq3, TValue __arg3, int __seq4, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg4, int __seq5, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg5)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "id", (object)__arg0);
-        __builder.AddAttribute(__seq1, "class", (object)__arg1);
-        __builder.AddAttribute(__seq2, "placeholder", (object)__arg2);
-        __builder.AddAttribute(__seq3, "Value", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ValueChanged", (object)__arg4);
-        __builder.AddAttribute(__seq5, "ValueExpression", (object)__arg5);
+        __builder.AddAttribute(__seq0, "id", __arg0);
+        __builder.AddAttribute(__seq1, "class", __arg1);
+        __builder.AddAttribute(__seq2, "placeholder", __arg2);
+        __builder.AddAttribute(__seq3, "Value", __arg3);
+        __builder.AddAttribute(__seq4, "ValueChanged", __arg4);
+        __builder.AddAttribute(__seq5, "ValueExpression", __arg5);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_16<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateInputNumber_17<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, global::System.Object __arg1, int __seq2, global::System.Object __arg2, int __seq3, TValue __arg3, int __seq4, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg4, int __seq5, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg5)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "id", (object)__arg0);
-        __builder.AddAttribute(__seq1, "class", (object)__arg1);
-        __builder.AddAttribute(__seq2, "placeholder", (object)__arg2);
-        __builder.AddAttribute(__seq3, "Value", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ValueChanged", (object)__arg4);
-        __builder.AddAttribute(__seq5, "ValueExpression", (object)__arg5);
+        __builder.AddAttribute(__seq0, "id", __arg0);
+        __builder.AddAttribute(__seq1, "class", __arg1);
+        __builder.AddAttribute(__seq2, "placeholder", __arg2);
+        __builder.AddAttribute(__seq3, "Value", __arg3);
+        __builder.AddAttribute(__seq4, "ValueChanged", __arg4);
+        __builder.AddAttribute(__seq5, "ValueExpression", __arg5);
         __builder.CloseComponent();
         }
         public static void CreateValidationMessage_18<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg0)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "For", (object)__arg0);
+        __builder.AddAttribute(__seq0, "For", __arg0);
         __builder.CloseComponent();
         }
         public static void CreateInputSelect_19<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, TValue __arg1, int __seq2, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg2, int __seq3, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg3, int __seq4, global::Microsoft.AspNetCore.Components.RenderFragment __arg4)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "class", (object)__arg0);
-        __builder.AddAttribute(__seq1, "Value", (object)__arg1);
-        __builder.AddAttribute(__seq2, "ValueChanged", (object)__arg2);
-        __builder.AddAttribute(__seq3, "ValueExpression", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ChildContent", (object)__arg4);
+        __builder.AddAttribute(__seq0, "class", __arg0);
+        __builder.AddAttribute(__seq1, "Value", __arg1);
+        __builder.AddAttribute(__seq2, "ValueChanged", __arg2);
+        __builder.AddAttribute(__seq3, "ValueExpression", __arg3);
+        __builder.AddAttribute(__seq4, "ChildContent", __arg4);
         __builder.CloseComponent();
         }
         public static void CreateInputDate_20<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, global::System.Object __arg1, int __seq2, global::System.Object __arg2, int __seq3, TValue __arg3, int __seq4, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg4, int __seq5, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg5)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputDate<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "id", (object)__arg0);
-        __builder.AddAttribute(__seq1, "class", (object)__arg1);
-        __builder.AddAttribute(__seq2, "placeholder", (object)__arg2);
-        __builder.AddAttribute(__seq3, "Value", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ValueChanged", (object)__arg4);
-        __builder.AddAttribute(__seq5, "ValueExpression", (object)__arg5);
+        __builder.AddAttribute(__seq0, "id", __arg0);
+        __builder.AddAttribute(__seq1, "class", __arg1);
+        __builder.AddAttribute(__seq2, "placeholder", __arg2);
+        __builder.AddAttribute(__seq3, "Value", __arg3);
+        __builder.AddAttribute(__seq4, "ValueChanged", __arg4);
+        __builder.AddAttribute(__seq5, "ValueExpression", __arg5);
         __builder.CloseComponent();
         }
         public static void CreateInputDate_21<TValue>(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder, int seq, int __seq0, global::System.Object __arg0, int __seq1, global::System.Object __arg1, int __seq2, global::System.Object __arg2, int __seq3, TValue __arg3, int __seq4, global::Microsoft.AspNetCore.Components.EventCallback<TValue> __arg4, int __seq5, global::System.Linq.Expressions.Expression<global::System.Func<TValue>> __arg5)
         {
         __builder.OpenComponent<global::Microsoft.AspNetCore.Components.Forms.InputDate<TValue>>(seq);
-        __builder.AddAttribute(__seq0, "id", (object)__arg0);
-        __builder.AddAttribute(__seq1, "class", (object)__arg1);
-        __builder.AddAttribute(__seq2, "placeholder", (object)__arg2);
-        __builder.AddAttribute(__seq3, "Value", (object)__arg3);
-        __builder.AddAttribute(__seq4, "ValueChanged", (object)__arg4);
-        __builder.AddAttribute(__seq5, "ValueExpression", (object)__arg5);
+        __builder.AddAttribute(__seq0, "id", __arg0);
+        __builder.AddAttribute(__seq1, "class", __arg1);
+        __builder.AddAttribute(__seq2, "placeholder", __arg2);
+        __builder.AddAttribute(__seq3, "Value", __arg3);
+        __builder.AddAttribute(__seq4, "ValueChanged", __arg4);
+        __builder.AddAttribute(__seq5, "ValueExpression", __arg5);
         __builder.CloseComponent();
         }
     }

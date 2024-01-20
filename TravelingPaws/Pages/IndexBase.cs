@@ -14,7 +14,7 @@ namespace TravelingPaws.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2")
+            if (Environment.MachineName == "COYOTE2" || Environment.MachineName == "ROADRUNNER2")
                 Quotes = await QuoteService.GetQuotes();
             else
                 Quotes = await InMemoryQuoteService.GetQuotes();

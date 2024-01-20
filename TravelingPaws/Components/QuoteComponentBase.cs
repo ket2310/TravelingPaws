@@ -35,7 +35,7 @@ namespace TravelingPaws.Components
             if (QuoteId != 0)
             {
                 PageHeaderText = "Edit Your Quote ";
-                if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2")
+                if (Environment.MachineName == "COYOTE2" || Environment.MachineName == "ROADRUNNER2")
                     Quote = await QuoteService.GetQuote(int.Parse(Id));
                 else
                     Quote = await InMemoryQuoteService.GetQuote(int.Parse(Id));
@@ -96,14 +96,14 @@ namespace TravelingPaws.Components
 
             if (Quote.QuoteId != 0)
             {
-                if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2")
+                if (Environment.MachineName == "COYOTE2" || Environment.MachineName == "ROADRUNNER2")
                     result = await QuoteService.UpdateQuote(Quote);
                 else
                     result = await InMemoryQuoteService.UpdateQuote(Quote);
             }
             else
             {
-                if (Environment.MachineName == "Coyote2" || Environment.MachineName == "ROADRUNNER2") 
+                if (Environment.MachineName == "COYOTE2" || Environment.MachineName == "ROADRUNNER2") 
                     result = await QuoteService.CreateQuote(Quote);
                 else
                     result = await InMemoryQuoteService.CreateQuote(Quote);
