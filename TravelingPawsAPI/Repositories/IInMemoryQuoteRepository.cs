@@ -14,5 +14,6 @@ namespace TravelingPawsAPI.Repositories
         Task<Quote> GetQuote(int id);
         Task<Quote> CreateAQuote(QuoteMap obj);
         Task<Quote> UpdateQuote(Quote Quote);
+        Task<Quote> DeleteQuote(int quoteId);
     }
 }

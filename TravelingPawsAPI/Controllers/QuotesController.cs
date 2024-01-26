@@ -74,22 +74,6 @@ namespace TravelingPawsAPI.Controllers
             return Ok(await _quoteRepository.CreateAQuote(quote));
         }      
         
-        //// DELETE: api/Quotes/5
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteQuote(int id)
-        //{
-        //    var quote = await _context.Quotes.FindAsync(id);
-        //    if (quote == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    _context.Quotes.Remove(quote);
-        //    await _context.SaveChangesAsync();
-
-        //    return NoContent();
-        //}
-
         private bool QuoteExists(int id)
         {
             return _quoteRepository.DoesItLive(id);

@@ -1,11 +1,8 @@
-﻿using MailKit.Net.Smtp;
-using MailKit.Security;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using MimeKit;
-using MimeKit.Text;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Threading.Tasks;
 using TravelingPawsAPI.Maps;
 using TravelingPawsAPI.Models;
@@ -66,8 +63,6 @@ namespace TravelingPawsAPI.Controllers
                     throw;
                 }
             }
-
-             
         }
 
         // POST: api/InMemoryQuotes
@@ -78,34 +73,31 @@ namespace TravelingPawsAPI.Controllers
             return Ok(await _quoteRepository.CreateAQuote(quote));
         }
 
-        // DELETE: api/InMemoryQuotes/5
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteQuote(int id)
-        //{
-        //    var quote = await _context.Quotes.FindAsync(id);
-        //    if (quote == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    _context.Quotes.Remove(quote);
-        //    await _context.SaveChangesAsync();
-
-        //    return NoContent();
-        //}
 
         private bool QuoteExists(int id)
         {
             return _quoteRepository.DoesItLive(id);
         }
 
-        [HttpPost("SendEmail")]
-        public IActionResult SendEmail(EmailDTO request)
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<Quote>> DeleteQuote(int id)
         {
-            _emailService.SendEmail(request);
+            try
+            {
+                var quoteToDelete = await _quoteRepository.GetQuote(id);
 
-            return Ok();
+                if (quoteToDelete == null)
+                {
+                    return NotFound($"Employee with Id = {id} not found");
+                }
 
+                return await _quoteRepository.DeleteQuote(id);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error deleting data");
+            }
         }
     }
 }

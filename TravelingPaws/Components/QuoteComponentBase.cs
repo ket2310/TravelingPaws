@@ -1,5 +1,10 @@
 ﻿using AutoMapper;
+using MailKit.Net.Smtp;
+using MailKit.Security;
 using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Configuration;
+using MimeKit;
+using MimeKit.Text;
 using System;
 using System.Threading.Tasks;
 using TravelingPaws.Services;
@@ -12,8 +17,8 @@ namespace TravelingPaws.Components
     public class QuoteComponentBase : GlobaldataService
     {
 
-        public Quote Quote { get; set; } = new Quote { petOwner = new PetOwner { dog = new Dog(), cat = new Cat()}, trip = new Trip() };
-        public QuoteMap quoteMap { get; set; } = new QuoteMap { petOwner = new PetOwner { dog = new Dog(), cat = new Cat() }, trip = new Trip()};
+        public Quote Quote { get; set; } = new Quote { petOwner = new PetOwner { dog = new Dog(), cat = new Cat() }, trip = new Trip() };
+        public QuoteMap quoteMap { get; set; } = new QuoteMap { petOwner = new PetOwner { dog = new Dog(), cat = new Cat() }, trip = new Trip() };
 
         public string PageHeaderText = string.Empty;
 
@@ -24,11 +29,15 @@ namespace TravelingPaws.Components
         public IMapper Mapper { get; set; }
 
         [Inject]
+        public IConfiguration _config { get; set; }
+
+
+        [Inject]
         public NavigationManager NavigationManager { get; set; }
 
         protected async override Task OnInitializedAsync()
         {
-   
+
 
             int.TryParse(Id, out int QuoteId);
 
@@ -103,15 +112,40 @@ namespace TravelingPaws.Components
             }
             else
             {
-                if (Environment.MachineName == "COYOTE2" || Environment.MachineName == "ROADRUNNER2") 
+                if (Environment.MachineName == "COYOTE2" || Environment.MachineName == "ROADRUNNER2")
                     result = await QuoteService.CreateQuote(Quote);
                 else
+                {
                     result = await InMemoryQuoteService.CreateQuote(Quote);
+                    SendEmail(Quote);
+                }
             }
             if (result != null)
             {
                 NavigationManager.NavigateTo("/");
             }
+        }
+
+        public void SendEmail(Quote q)
+        {
+            EmailDTO request = new EmailDTO();
+            var email = new MimeMessage();
+            email.From.Add(MailboxAddress.Parse(_config.GetSection("EmailUsername").Value));
+
+            request.To = q.petOwner.Email;
+            email.To.Add(MailboxAddress.Parse(request.To));
+
+            request.Subject = "This is a test.";
+            email.Subject = request.Subject;
+
+            request.Body = "Quote sent at " + DateTime.Now.ToString();
+            email.Body = new TextPart(TextFormat.Html) { Text = request.Body };
+
+            using var smtp = new SmtpClient();
+            smtp.Connect(_config.GetSection("EmailHost").Value, 587, SecureSocketOptions.StartTls);
+            smtp.Authenticate(_config.GetSection("EmailUsername").Value, _config.GetSection("EmailPassword").Value);
+            smtp.Send(email);
+            smtp.Disconnect(true);
         }
     }
 }
