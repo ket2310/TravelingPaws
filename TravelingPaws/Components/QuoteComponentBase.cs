@@ -113,7 +113,10 @@ namespace TravelingPaws.Components
             else
             {
                 if (Environment.MachineName == "COYOTE2" || Environment.MachineName == "ROADRUNNER2")
+                {
                     result = await QuoteService.CreateQuote(Quote);
+                    SendEmail(Quote);
+                }
                 else
                 {
                     result = await InMemoryQuoteService.CreateQuote(Quote);
